@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumina - Mystery Collection</title>
+    <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="aboutcontactus.css">
+</head>
+<body>
+
+<div class="sticky-header">
+<nav class="navbar">
+    <div class="logo">lumina</div>
+    <ul class="nav-links">
+        <li><a href="index.html">HOME</a></li>
+	<li><a href="botw.html">BOOK OF THE WEEK</a></li>
+        <li class="dropdown">
+            <a href="#">FICTION</a>
+            <ul class="dropdown-content">
+                <li><a href="romance.html">Romance</a></li>
+                <li><a href="fantasy.html">Fantasy</a></li>
+                <li><a href="mystery.html">Mystery</a></li>
+                <li><a href="thriller.html">Thriller</a></li>
+                <li><a href="scifi.html">SciFi</a></li>
+                <li><a href="classic.html">Classic Fiction</a></li>
+            </ul>
+        </li>
+        <li><a href="allcategories.html">ALL CATEGORIES</a></li>
+        <li class="dropdown">
+            <a href="#">ABOUT & CONTACT US</a>
+            <ul class="dropdown-content">
+                <li><a href="aboutus.html">About us</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="contactus.html">Contact us</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+
+<section class="search-section">
+    <h3>What secrets are hidden between the lines?</h3>
+    <div class="search-box">
+        <span class="search-icon">🔍</span>
+        <input type="text" id="searchInput" placeholder="Search author and book titles...">
+        <span class="close-icon" id="clearSearch" style="cursor:pointer">✖</span>
+    </div>
+</section>
+</div>
+
+<section class="book-section">
+    <h2 class="section-title">Mystery Collection</h2>
+    <div class="carousel-wrapper">
+        <button class="slide-btn prev" onclick="moveSlide(-1)">❮</button>
+        
+        <div class="book-container slide-container" id="bookSlider">
+
+	<div class="book-card" onclick="openBook(
+    		'Twin\'s Territory', 
+    		'mysterybooks/twinterritory.jpg', 
+    		'Sejak pertemuan dengan si kembar tak seiras, Haneef dan Hadeef, hidup 			Alara Irdina tunggang terbalik dalam sekelip mata. Satu demi satu kejadian 		mencemaskan silih berganti mengganggu hidupnya. Entah bagaimana pula, dia 		tiba-tiba dikaitkan dengan seorang lelaki yang dikenali sebagai Shadow. 		Tapi... kenapa dia? Apa kaitan dia dengan Shadow sehingga dia menjadi 			sasaran dan diancam oleh musuh-musuh lelaki misteri itu? The moment you 		know the truth, that\'ll be the end of your life. Lara terpaksa 			mengorbankan masa depan demi keselamatan dirinya sendiri. Dia harus masuk 		ke lembah kehancuran demi melindungi orang yang disayanginya. Lara, sekali 		awak masuk kawasan ni, awak tak boleh keluar. Dan demi sebuah kebenaran, 		ada bayaran yang harus dilunaskan. Dia akan terperangkap dalam dunia itu 		selama-	lamanya. Sanggupkah dia? When I told you there\'s no escape after 		entering our 	world, there is no really no way out. Tapi, mengetahui 			kebenaran itu lebih baik 	daripada hidup dalam sangkaan yang 			berpaksikan penipuan, bukan? Namun, bagaimana 	pula jika kebenaran itu 		terlalu... menyakitkan?', 
+    		'★★★★☆', 
+    		'RM 40.00', 
+    		'https://my.shp.ee/AVHfazF', 
+    		'9786299784821', 
+    		'Effalee'
+		)">                
+		
+		<img src="mysterybooks/twinterritory.jpg" alt="Twin\'s Territory">
+                <div class="genre">MYSTERY</div>
+                <p><strong>Twin's Territory</strong></p>
+	</div>
+
+	<div class="book-card" onclick="openBook(
+    		'The Girl Who Kicked the Hornets\' Nest', 
+    		'mysterybooks/thegirl.jpg', 
+    		'The stunning third and final novel in Stieg Larsson\'s internationally 		best-selling trilogy. Lisbeth Salander - the heart of Larsson\'s two 			previous novels - lies in critical condition, a bullet wound to her head, 		in the intensive care unit of a Swedish city hospital. She\'s 				fighting for her life in more ways than one: if and when she recovers, she		\'ll be taken back to Stockholm to stand trial for three murders. With the 		help of her friend, journalist Mikael Blomkvist, she will not only have to 		prove her innocence, but also identify and denounce those in authority who 		have allowed the vulnerable, like herself, to suffer abuse and violence. 		And, on her own, she will plot revenge - against the man who tried to kill		her, and the corrupt government institutions that very nearly destroyed her 		life. Once upon a time, she was a victim. Now Salander is fighting back.', 
+    		'★★★★☆', 
+    		'RM 44.65', 
+    		'https://a.co/d/es8uuka', 
+    		'9780307269997', 
+    		'Stieg Larsson'
+		)">                
+
+		<img src="mysterybooks/thegirl.jpg" alt="The Girl Who Kicked the Hornets' Nest">
+                <div class="genre">MYSTERY</div>
+                <p><strong>The Girl Who Kicked the Hornets' Nest</strong></p>
+	</div>
+
+	<div class="book-card" onclick="openBook(
+    		'Selindung Di Sebalik Rahsia', 
+    		'mysterybooks/rahsia.jpg', 
+    		'&quot;Selain pasangan hilang semasa kemalangan, persamaan kes kamu berdua 		ialah terdapat transaksi wang ke akaun keldai.&quot; – Inspektor Rahil 			Najma Adiba sangka hanya terlibat dalam kemalangan biasa bersama tunangnya. 		Namun apabila dimaklumkan tunangnya \'tiada\' di tempat kejadian 			kemalangan, dia mula pelik. Aisy Fathi bangkit daripada koma dan menerima 		berita \'kehilangan\' isterinya, Lily. Mereka ditimpa kecelakaan sehari 		selepas diijabkabulkan. Kenyataan dua orang saksi pula bercanggah 			membuatkan dia bertambah tertekan. Suatu hari, Najma menemui satu rahsia 		besar yang melibatkan Mat Salam. Seorang lelaki yang hanya muncul jika dia 		menyarung jaket putih. &quot;Kalau aku bukan manusia macam kau … jadi siapa 		aku?&quot; – Mat Salam Apakah benar ada komplot yang cuba menganiaya Najma 		Adiba dan Aisy Fathi? Siapa pula Mat Salam yang tiba-tiba muncul dalam 			hidup Najma Adiba? Dan sanggupkah Najma Adiba dan Aisy Fathi saling 			menafikan perasaan saat cinta mula bertunas di hati apabila Lily muncul 		kembali?', 
+    		'★★★★☆', 
+    		'RM 37.00', 
+    		'https://shopee.com.my/Selindung-Di-Sebalik-Rahsia-Azwin-Nalisa-Mangosteen-		Publication--i.134773014.28900484734', 
+    		'9789671865538', 
+    		'Azwin Nalisa'
+		)">
+                
+		<img src="mysterybooks/rahsia.jpg" alt="Selindung Di Sebalik Rahsia">
+                <div class="genre">MYSTERY</div>
+                <p><strong>Selindung Di Sebalik Rahsia</strong></p>
+            </div>
+
+
+        </div>
+        <button class="slide-btn next" onclick="moveSlide(1)">❯</button>
+    </div>
+</section>
+
+<div id="bookModal" class="modal">
+    <div class="modal-content">
+        <span class="close-modal" onclick="closeModal()">&times;</span>
+        <div class="modal-left">
+            <img id="modalImg" src="" alt="">
+        </div>
+        <div class="modal-right">
+            <h2 id="modalTitle"></h2>
+            <p id="modalAuthor" style="font-style: italic; color: #5C1D1D; margin-bottom: 5px;"></p>
+            <p id="modalISBN" style="font-size: 13px; color: #666; margin-bottom: 10px;"></p>
+            <p id="modalRating" style="color: #FFD700; font-size: 20px;"></p>
+            <p class="price-tag" id="modalPrice"></p>
+            <h3>Synopsis:</h3>
+            <p id="modalDesc"></p>
+            <a href="#" id="buyLink" target="_blank" class="buy-btn">BUY NOW</a>
+        </div>
+    </div>
+</div>
+
+<section class="review-section">
+    <form class="review-form">
+        <h2 style="text-align: center; margin-bottom: 20px; color: #FDF9E7;">Review this Story</h2>
+        <div class="input-group">
+            <label>Book Title</label>
+            <input type="text" placeholder="Enter book name..." required>
+        </div>
+        <div class="input-group">
+            <label>Rating</label>
+            <div class="star-rating">
+                <input type="radio" id="star5" name="rating" value="5"><label for="star5">★</label>
+                <input type="radio" id="star4" name="rating" value="4"><label for="star4">★</label>
+                <input type="radio" id="star3" name="rating" value="3"><label for="star3">★</label>
+                <input type="radio" id="star2" name="rating" value="2"><label for="star2">★</label>
+                <input type="radio" id="star1" name="rating" value="1"><label for="star1">★</label>
+            </div>
+        </div>
+        <div class="input-group">
+            <label>Your Review</label>
+            <textarea rows="5" placeholder="What do you think about this book?" required></textarea>
+        </div>
+        <button type="submit" class="submit-btn">SUBMIT REVIEW</button>
+    </form>
+</section>
+
+<footer style="text-align: center; padding: 30px 20px; background-color: #2c2c2c; color: #ffffff;">
+    <style>
+        footer a {
+            color: #ffffff !important;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        footer h3 {
+            color: #ffffff;
+            margin-bottom: 15px;
+        }
+        footer ul {
+            list-style: none;
+            padding: 0;
+        }
+        footer li {
+            margin-bottom: 8px;
+        }
+        .directory-grid {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            max-width: 1000px;
+            margin: 0 auto;
+            text-align: left;
+        }
+        .dir-category {
+            margin: 10px 20px;
+        }
+    </style>
+
+    <div class="directory-grid">
+        <div class="dir-category">
+            <h3>SITEMAP</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+                <li><a href="allcategories.html">All Categories</a></li>
+            </ul>
+        </div>
+
+        <div class="dir-category">
+            <h3>FICTION GENRES</h3>
+            <ul>
+                <li><a href="romance.html">Romance</a></li>
+                <li><a href="fantasy.html">Fantasy</a></li>
+                <li><a href="mystery.html">Mystery</a></li>
+                <li><a href="thriller.html">Thriller</a></li>
+                <li><a href="scifi.html">SciFi</a></li>
+                <li><a href="classic.html">Classic Fiction</a></li>
+            </ul>
+        </div>
+
+        <div class="dir-category">
+            <h3>EXTERNAL RESOURCES</h3>
+            <ul>
+                <li><a href="https://shopee.com.my" target="_blank">Shopee Bookstore</a></li>
+                <li><a href="https://www.popular.com.my" target="_blank">Popular Bookstore</a></li>
+                <li><a href="https://malaysia.kinokuniya.com/" target="_blank">Kinokuniya Bookstore</a></li>
+                <li><a href="https://mphonline.com/" target="_blank">MPH Bookstore</a></li>
+                <li><a href="https://hasanibooks.com/" target="_blank">Hasani Bookstore</a></li>
+            </ul>
+        </div>
+    </div>
+    <br>
+    <p>&copy; 2026 Lumina Book Recommendations. All Rights Reserved.</p>
+</footer>
+
+<script>
+    // Carian buku (tajuk & author)
+    const searchInput = document.getElementById('searchInput');
+    searchInput.addEventListener('input', function() {
+        const keyword = searchInput.value.toLowerCase();
+        const cards = document.querySelectorAll('.book-card');
+        cards.forEach(card => {
+            const title = card.querySelector('p').innerText.toLowerCase();
+            const authorData = card.getAttribute('onclick').toLowerCase();
+            card.style.display = (title.includes(keyword) || authorData.includes(keyword)) ? "block" : "none";
+        });
+    });
+
+    // Slide carousel
+    function moveSlide(direction) {
+        const slider = document.getElementById('bookSlider');
+        slider.scrollBy({ left: direction * 300, behavior: 'smooth' });
+    }
+
+    // Modal
+    function openBook(title, img, desc, rating, price, link, isbn, author) {
+        document.getElementById('modalTitle').innerText = title;
+        document.getElementById('modalImg').src = img;
+        document.getElementById('modalDesc').innerText = desc;
+        document.getElementById('modalRating').innerText = rating;
+        document.getElementById('modalPrice').innerText = price;
+        document.getElementById('buyLink').href = link;
+        document.getElementById('modalISBN').innerText = "ISBN: " + (isbn || "N/A");
+        document.getElementById('modalAuthor').innerText = "Author: " + (author || "Unknown");
+        document.getElementById('bookModal').style.display = "block";
+    }
+
+    function closeModal() {
+        document.getElementById('bookModal').style.display = "none";
+    }
+
+    // Tutup modal jika klik luar
+    window.onclick = function(event) {
+        let modal = document.getElementById('bookModal');
+        if (event.target == modal) modal.style.display = "none";
+    }
+</script>
+
+</body>
+</html>

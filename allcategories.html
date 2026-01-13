@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumina - All Categories</title>
+    <link rel="icon" type="image/jpg" href="luminalogo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="all-categories.css">
+    <link rel="stylesheet" href="aboutcontactus.css">
+</head>
+<body>
+
+<div class="sticky-header">
+<nav class="navbar">
+    <div class="logo">lumina</div>
+    <ul class="nav-links">
+        <li><a href="index.html">HOME</a></li>
+	<li><a href="botw.html">BOOK OF THE WEEK</a></li>
+        <li class="dropdown">
+            <a href="#">FICTION</a>
+            <ul class="dropdown-content">
+                <li><a href="romance.html">Romance</a></li>
+                <li><a href="fantasy.html">Fantasy</a></li>
+                <li><a href="mystery.html">Mystery</a></li>
+                <li><a href="thriller.html">Thriller</a></li>
+                <li><a href="scifi.html">SciFi</a></li>
+                <li><a href="classic.html">Classic Fiction</a></li>
+            </ul>
+        </li>
+        <li><a href="allcategories.html">ALL CATEGORIES</a></li>
+        <li class="dropdown">
+            <a href="#">ABOUT & CONTACT US</a>
+            <ul class="dropdown-content">
+                <li><a href="aboutus.html">About us</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="contactus.html">Contact us</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+
+<section class="search-section">
+    <h3>Browse Our Collection</h3>
+    <div class="filter-container">
+        <select id="categoryFilter">
+            <option value="all">All Genres</option>
+            <option value="fantasy">Fantasy</option>
+            <option value="romance">Romance</option>
+            <option value="scifi">Sci-Fi</option>
+            <option value="thriller">Thriller</option>
+            <option value="classic fiction">Classic Fiction</option>
+            <option value="slice of life">Slice of Life</option>
+            <option value="mystery">Mystery</option>
+        </select>
+        <div class="search-box">
+            <span class="search-icon">🔍</span>
+            <input type="text" id="allSearchInput" placeholder="Search by title or author...">
+        </div>
+    </div>
+</section>
+</div>
+
+<section class="book-section all-books-page">
+    <div class="all-books-grid" id="allBooksGrid"></div>
+</section>
+
+<footer style="text-align: center; padding: 30px 20px; background-color: #2c2c2c; color: #ffffff;">
+    <style>
+        footer a {
+            color: #ffffff !important;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        footer h3 {
+            color: #ffffff;
+            margin-bottom: 15px;
+        }
+        footer ul {
+            list-style: none;
+            padding: 0;
+        }
+        footer li {
+            margin-bottom: 8px;
+        }
+        .directory-grid {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            max-width: 1000px;
+            margin: 0 auto;
+            text-align: left;
+        }
+        .dir-category {
+            margin: 10px 20px;
+        }
+    </style>
+
+    <div class="directory-grid">
+        <div class="dir-category">
+            <h3>SITEMAP</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+                <li><a href="allcategories.html">All Categories</a></li>
+            </ul>
+        </div>
+
+        <div class="dir-category">
+            <h3>FICTION GENRES</h3>
+            <ul>
+                <li><a href="romance.html">Romance</a></li>
+                <li><a href="fantasy.html">Fantasy</a></li>
+                <li><a href="mystery.html">Mystery</a></li>
+                <li><a href="thriller.html">Thriller</a></li>
+                <li><a href="scifi.html">SciFi</a></li>
+                <li><a href="classic.html">Classic Fiction</a></li>
+            </ul>
+        </div>
+
+        <div class="dir-category">
+            <h3>EXTERNAL RESOURCES</h3>
+            <ul>
+                <li><a href="https://shopee.com.my" target="_blank">Shopee Bookstore</a></li>
+                <li><a href="https://www.popular.com.my" target="_blank">Popular Bookstore</a></li>
+                <li><a href="https://malaysia.kinokuniya.com/" target="_blank">Kinokuniya Bookstore</a></li>
+                <li><a href="https://mphonline.com/" target="_blank">MPH Bookstore</a></li>
+                <li><a href="https://hasanibooks.com/" target="_blank">Hasani Bookstore</a></li>
+            </ul>
+        </div>
+    </div>
+    <br>
+    <p>&copy; 2026 Lumina Book Recommendations. All Rights Reserved.</p>
+</footer>
+
+<script>
+    // 1. DATABASE BUKU - Tambah buku baru kat sini je bro!
+    const booksData = [
+        { title: "The Crimson Moth", author: "Kristen Ciccarelli", category: "fantasy", img: "homebooks/crimson.jpg" },
+        { title: "Star Wars: True Colors", author: "Karen Traviss", category: "scifi", img: "homebooks/starwars.jpg" },
+        { title: "The Atlas Six", author: "Olivie Blake", category: "fantasy", img: "homebooks/theatlassix.jpg" },
+        { title: "Garam", author: "Ruwi Meita", category: "thriller", img: "homebooks/garam.jpg" },
+	{ title: "Persuader", author: "Lee Child", category: "thriller", img: "thrillerbooks/persuader.jpg" },
+	{ title: "Robin Cook Terminal", author: "Robin Cook", category: "thriller", img: "thrillerbooks/robincookterminal.jpg" },
+	{ title: "Chefs Cuisine", author: "EffaLee", category: "thriller", img: "thrillerbooks/chefscuisine.jpg" },
+	{ title: "Helah Terakhir", author: "Defikaism", category: "thriller", img: "thrillerbooks/helahterakhir.jpg" },
+	{ title: "Twin's Territory", author: "Stieg Larsson", category: "mystery", img: "mysterybooks/twinterritory.jpg" },
+	{ title: "The Girl Who Kicked the Hornets' Nest", author: "Effalee", category: "mystery", img: "mysterybooks/thegirl.jpg" },
+	{ title: "Selindung Di Sebalik Rahsia", author: "Azwin Nalisa", category: "mystery", img: "mysterybooks/rahsia.jpg" },
+        { title: "Love, Yours", author: "Aykelrahim", category: "romance", img: "romancebooks/love,yours.jpg" },
+	{ title: "Rumah Tak Mesti Bahagia", author: "Arif Zulkifli", category: "slice of life", img: "homebooks/rumah.jpg" },
+	{ title: "Zeanissa", author: "Emmiyya", category: "romance", img: "romancebooks/zeanissa.jpg" },
+	{ title: "Rasa Cerita Kita", author: "Yumi Hyra", category: "romance", img: "romancebooks/rasaceritakita.jpg" },
+	{ title: "Heliophile", author: "Aykelrahim", category: "romance", img: "romancebooks/heliophile.jpg" },
+	{ title: "Sisakan Aku Cinta", author: "Sofia Roses", category: "romance", img: "romancebooks/sisakanakucinta.jpg" },
+	{ title: "Kenzi x Embun", author: "Anna Lee", category: "romance", img: "romancebooks/kenzixembun.jpg" },
+	{ title: "Kerana Aku Bukan Pilihan", author: "Syaf Asriqa", category: "romance", img: "romancebooks/pilihan.jpg" },
+	{ title: "Kerana Dendam", author: "D. Dahlia", category: "romance", img: "romancebooks/keranadendam.jpg" },
+	{ title: "Masihkah Ada Kita?", author: "Emmiyya", category: "romance", img: "romancebooks/masihkahadakita.jpg" },
+	{ title: "Hanya Ingin Kau Tahu", author: "Msroses", category: "romance", img: "romancebooks/hanyainginkautahu.jpg" },
+	{ title: "Artemis Fowl Criminally Good", author: "Eoin Colfer", category: "fantasy", img: "fantasybooks/artemis fowl.jpg" },
+	{ title: "Babel", author: "R.F Kuang", category: "fantasy", img: "fantasybooks/babel.jpg" },
+	{ title: "Once Upon a Broken Heart", author: "Stephanie Garber", category: "fantasy", img: "fantasybooks/ouabh.jpg" },
+	{ title: "The Ballad of Never After", author: "Stephanie Garber", category: "fantasy", img: "fantasybooks/tbona.jpg" },
+	{ title: "This Woven Kingdom", author: "Tahereh Mafi", category: "fantasy", img: "fantasybooks/woven.jpg" },
+	{ title: "Harry Potter And The Half-Blood Prince", author: "J.K Rowling", category: "fantasy", img: "fantasybooks/halfbloodprince.jpg" },
+	{ title: "Harry Potter And The Deathly Hallows", author: "J.K Rowling", category: "fantasy", img: "fantasybooks/deathlyhallows.jpg" },
+	{ title: "Heir", author: "Sabaa Tahir", category: "fantasy", img: "fantasybooks/heir.jpg" },
+	{ title: "Revenge in Violet Hues", author: "Nadiah Zakaria", category: "fantasy", img: "fantasybooks/revenge.jpg" },
+	{ title: "Strike the Zither", author: "Joan He", category: "fantasy", img: "fantasybooks/strike.jpg" },
+	{ title: "Wuthering Heights", author: "Emily Bronte", category: "classic fiction", img: "classicbooks/wuthering-heights.jpg" },
+	{ title: "Persuasion", author: "Jane Austen", category: "classic fiction", img: "classicbooks/persuasion.jpg" },
+	{ title: "Nicholas Nickleby", author: "Charles Dickens", category: "classic fiction", img: "classicbooks/nickleby.jpg" },
+	{ title: "The Man in the Iron Mask", author: "Alexandre Dumas", category: "classic fiction", img: "classicbooks/iron mask.jpg" },
+	{ title: "Shatter Me", author: "Tahereh Mafi", category: "scifi", img: "scifibooks/shatterme.jpg" },
+	{ title: "Star Wars Order 66", author: "Karen Traviss", category: "scifi", img: "scifibooks/starwars.jpg" },
+	{ title: "Command & Conquer: Tiberium Wars", author: "Keith R. A. DeCandido", category: "scifi", img: "scifibooks/command.jpg" },
+    ];
+
+    const grid = document.getElementById('allBooksGrid');
+    const categoryFilter = document.getElementById('categoryFilter');
+    const searchInput = document.getElementById('allSearchInput');
+
+    // 2. FUNGSI UNTUK GENERATE KAD BUKU
+    function displayBooks(booksList) {
+        grid.innerHTML = ""; // Kosongkan grid asal
+        
+        if (booksList.length === 0) {
+            grid.innerHTML = `<p style="color: #5C1D1D; grid-column: 1/-1; text-align: center; font-size: 1.2rem; margin-top: 50px;">
+                Oh no! No results found..</p>`;
+            return;
+        }
+
+        booksList.forEach(book => {
+            const bookHTML = `
+                <div class="book-card" data-category="${book.category}">
+                    <div class="book-img-wrapper">
+                        <img src="${book.img}" alt="${book.title}">
+                        <div class="overlay">
+                            <div class="text">
+                                <h3>${book.title}</h3>
+                                <p>${book.author}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="genre">${book.category.replace(/-/g, ' ')}</p>
+                </div>
+            `;
+            grid.insertAdjacentHTML('beforeend', bookHTML);
+        });
+    }
+
+    // 3. LOGIK FILTER & SEARCH (DUAL FILTER)
+    function filterBooks() {
+        const selectedGenre = categoryFilter.value.toLowerCase();
+        const searchTerm = searchInput.value.toLowerCase();
+
+        const filtered = booksData.filter(book => {
+            const matchGenre = (selectedGenre === 'all' || book.category === selectedGenre);
+            const matchSearch = book.title.toLowerCase().includes(searchTerm) || 
+                                book.author.toLowerCase().includes(searchTerm);
+            return matchGenre && matchSearch;
+        });
+
+        displayBooks(filtered);
+    }
+
+    // Event Listeners
+    categoryFilter.addEventListener('change', filterBooks);
+    searchInput.addEventListener('input', filterBooks);
+
+    // Render semua buku masa page mula-mula load
+    displayBooks(booksData);
+</script>
+
+</body>
+</html>

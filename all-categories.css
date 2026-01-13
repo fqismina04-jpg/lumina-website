@@ -1,0 +1,175 @@
+/* --- CSS KHAS UNTUK ALL CATEGORIES PAGE --- */
+
+/* 1. BETULKAN SEARCH & FILTER (BAGI SEBARIS) */
+.search-section {
+    background-color: #5C1D1D;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.search-section h3 {
+    color: white;
+    margin-bottom: 20px;
+    font-family: 'Georgia', serif;
+}
+
+.filter-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px; /* Jarak antara dropdown dan search bar */
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Dropdown Genre */
+#categoryFilter {
+    height: 45px;
+    padding: 0 15px;
+    border-radius: 25px;
+    border: none;
+    background-color: #FDF9E7;
+    color: #5C1D1D;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+}
+
+/* Search Box - Matikan margin: auto yang buat dia lari */
+.filter-container .search-box {
+    margin: 0 !important; 
+    width: 350px;
+    background-color: white;
+    padding: 8px 20px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+}
+
+.filter-container .search-box input {
+    border: none;
+    outline: none;
+    width: 100%;
+    margin-left: 10px;
+}
+
+/* 2. GRID BUKU (SUSUNAN MANTEP) */
+.all-books-page {
+    background-color: #FDF9E7;
+    padding: 50px 5%;
+}
+
+.all-books-grid {
+    display: grid;
+    /* Paksa setiap column 200px dan susun tengah */
+    grid-template-columns: repeat(auto-fill, 200px);
+    justify-content: center; 
+    gap: 40px 30px; /* Jarak bawah 40px, kiri-kanan 30px */
+}
+
+/* 3. CARD & WRAPPER (FIX TULISAN LARI) */
+.all-books-page .book-card {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.all-books-page .book-img-wrapper {
+    position: relative;
+    width: 200px;
+    height: 300px; /* Kunci tinggi supaya tulisan genre selari */
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease;
+}
+
+.all-books-page .book-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* 4. OVERLAY HITAM (PENUH & ZOOM) */
+.all-books-page .overlay {
+    position: absolute;
+    inset: 0; /* Paksa tutup semua bucu */
+    background: rgba(0, 0, 0, 0.8) !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 5;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+.all-books-page .overlay h3 {
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+.all-books-page .overlay p {
+    font-size: 0.85rem;
+    font-style: italic;
+}
+
+/* --- HOVER LOGIC --- */
+.all-books-page .book-card:hover .book-img-wrapper {
+    transform: scale(1.05);
+}
+
+.all-books-page .book-card:hover .overlay {
+    opacity: 1;
+}
+
+/* 5. GENRE TEXT (DUDUK BAWAH GAMBAR) */
+.all-books-page .genre {
+    margin-top: 15px;
+    color: #5C1D1D;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* --- FOOTER SECTION SYNC --- */
+footer {
+    text-align: center; 
+    padding: 30px 20px; 
+    background-color: #2c2c2c !important; /* Paksa warna gelap */
+    color: #ffffff !important;
+    margin-top: 50px;
+}
+
+footer a {
+    color: #ffffff !important;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Susunan grid agar sama seperti faq.html */
+.directory-grid {
+    display: flex !important; /* Tukar dari grid ke flex supaya center */
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.dir-category h3 {
+    color: #ffffff !important; /* Pastikan tajuk footer warna putih */
+    border-bottom: 2px solid #5C1D1D;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+}

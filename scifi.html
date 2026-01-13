@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumina - Thriller Collection</title>
+    <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/jpg" href="luminalogo.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="aboutcontactus.css">
+</head>
+<body>
+
+<div class="sticky-header">
+<nav class="navbar">
+    <div class="logo">lumina</div>
+    <ul class="nav-links">
+        <li><a href="index.html">HOME</a></li>
+	<li><a href="botw.html">BOOK OF THE WEEK</a></li>
+        <li class="dropdown">
+            <a href="#">FICTION</a>
+            <ul class="dropdown-content">
+                <li><a href="romance.html">Romance</a></li>
+                <li><a href="fantasy.html">Fantasy</a></li>
+                <li><a href="mystery.html">Mystery</a></li>
+                <li><a href="thriller.html">Thriller</a></li>
+		<li><a href="scifi.html">SciFi</a></li>
+		<li><a href="classic.html">Classic Fiction</a></li>
+            </ul>
+        </li>
+        <li><a href="allcategories.html">ALL CATEGORIES</a></li>
+        <li class="dropdown">
+            <a href="#">ABOUT & CONTACT US</a>
+            <ul class="dropdown-content">
+                <li><a href="aboutus.html">About us</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="contactus.html">Contact us</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+
+    <section class="search-section">
+        <h3>Dare to uncover the truth behind the shadows?</h3>
+        <div class="search-box">
+            <span class="search-icon">🔍</span>
+            <input type="text" id="searchInput" placeholder="Search author and tittle books...">
+            <span class="close-icon" id="clearSearch" style="cursor:pointer">✖</span>
+        </div>
+    </section>
+</div>
+
+<section class="book-section">
+    <h2 class="section-title">Science  Fiction Collection</h2>
+    <div class="carousel-wrapper">
+        <button class="slide-btn prev" onclick="moveSlide(-1)">❮</button>
+        
+<div class="book-container slide-container" id="bookSlider">
+
+<div class="book-card" onclick="openBook(
+    'Shatter Me', 
+    'scifibooks/shatterme.jpg', 
+    'Addictive, intense, and oozing with romance. \'I\'m envious. I couldn\'t put it down\'.—Lauren Kate, FALLEN + HAVE A CURSE. I HAVE A GIFT.-I\'M A MONSTER.I\'M MORE THAN HUMAN. MY TOUCH IS LETHAL. MY TOUCH IS POWER. LAM THEIR WEAPON. I WILL FIGHT BACK. A fragile teenage girl is held captive. Locked in a cell by The Reestablishment, a harsh dictatorship in charge of a crumbling world. But Juliette is no ordinary teenager - one touch from her can kill. The Reestablishment wants to use her as a weapon. But Juliette has other plans. After a lifetime without freedom, she\'s finally discovered the strength to fight back - and to find a future with the one person she thought she\'d lost forever ...', 
+    '★★★★☆', 
+    'RM 21.00', 
+    'https://my.shp.ee/bNdEUgL', 
+    '9-781405-291750', 
+    'Tahereh Mafi'
+)">
+    <img src="scifibooks/shatterme.jpg" alt="Shatter Me">
+    <div class="genre">SCI FI</div>
+    <p><strong>Shatter Me</strong></p>
+</div>
+
+<div class="book-card" onclick="openBook(
+    'Star Wars Order 66', 
+    'scifibooks/starwars.jpg', 
+    'The Clone Wars rage to their bloody climax. Treachery reigns. Treason takes courage. Commandos, Jedi, and the entire Galactic Republic must face the end of life as they know it... and the dreaded dawn of a new empire. Even as the Clone Wars are about to reach an explosive climax, no one knows whether victory will favor the Grand Army of the Republic (GAR) or the Separatists. But no matter who wins, the stakes are highest for elite Special Ops clones like the Republic Commandos in Omega and Delta squads - and the notorious renegade Advance Recon Commando troopers known as Null-ARCs. And now even the deadliest weapon may not be powerful enough to defeat the real menace: the apocalyptic horror to be unleashed when Palpatine utters the chilling words: The time has come. Execute Order 66. Translation: The Jedi have tried to stage a coup, and all must be shot on sight. With their faith in the Republic and their loyalty to their Jedi allies put to the ultimate test, how will the men of Omega and Delta squads react to the most infamous command in galactic history?', 
+    '★★★★★', 
+    'RM 28.51', 
+    'https://www.ebay.com/itm/156071849817?chn=ps&norover=1&mkevt=1&mkrid=711-153320-877651-5&mkcid=2&itemid=156071849817&targetid=325425753764&device=m&mktype=pla&googleloc=9212800&poi=&campaignid=20790922935&mkgroupid=154281059645&rlsatarget=pla-325425753764&abcId=&merchantid=6296724&gad_source=4&gad_campaignid=20790922935&gbraid=0AAAAAD_QDh8UAu9WjqPVqBZ9xN_TWZZQz&gclid=CjwKCAiA64LLBhBhEiwA-Pxgu0HBJslGJ85v8HxIuUMCqHRj1-LYjiUOQN8vjtaXEyeDuaB83cmInxoC3ikQAvD_BwE', 
+    '9-781841-496498', 
+    'Karen Traviss',
+)">
+    <img src="scifibooks/starwars.jpg" alt="Star Wars Order 66">
+    <div class="genre">SCI FI</div>
+    <p><strong>Star Wars Order 66</strong></p>
+</div>
+
+
+
+<div class="book-card" onclick="openBook(
+    'Command & Conquer: Tiberium Wars', 
+    'scifibooks/command.jpg', 
+    'IN THE TWENTY-FIRST CENTURY, EARTH IS INFESTED WITH TIBERIUM, AN ALIEN SUBSTANCE THAT COULD BE HUMANITY\'S SALVATION ... OR ITS DOWNFALL. Though Tiberium is a resource that could solve the world\'s entre citis, it i as incredibly destructv, sprating diese death, and devastation. Tiberium has divided the planet into two factions: the Global Defense Initiative (GDI), which tries to maintain order at any cost, and the Brotherhood of Nod, a terrorist organization turned superpower that believes with religious fervor in the potential of Tiberium. The groups have already fought two world wars, killing millions. Now, in the year 2047, a vicious Nod attack compels GDI to mobilize. Another epic global war is being waged, with humanity\'s fate in the balance. One of GDI\'s top units, the 22nd Infantry Division, must halt Nod\'s agenda and keep the world from devolving into further chaos and loss of life. But in the midst of heavy fighting all over the world, mysterious visitors arrive... who may spell doom for the human race.', 
+    '★★★☆☆', 
+    'RM 16.25', 
+    'https://www.ebay.com/itm/364875888822?chn=ps&mkevt=1&mkcid=28&google_free_listing_action=view_item', 
+    '9-781841-496429', 
+    'Keith R. A. DeCandido',
+)">
+    <img src="scifibooks/command.jpg" alt="Command & Conquer: Tiberium Wars">
+    <div class="genre">SCI FI</div>
+    <p><strong>Command & Conquer: Tiberium Wars</strong></p>
+</div>
+
+</div>
+<button class="slide-btn next" onclick="moveSlide(1)">❯</button>
+    </div>
+</section>
+
+<div id="bookModal" class="modal">
+    <div class="modal-content">
+        <span class="close-modal" onclick="closeModal()">&times;</span>
+        <div class="modal-left">
+            <img id="modalImg" src="" alt="">
+        </div>
+<div class="modal-right">
+    <h2 id="modalTitle"></h2>
+    <p id="modalAuthor" style="font-style: italic; color: #5C1D1D; margin-bottom: 5px;"></p>
+    <p id="modalISBN" style="font-size: 13px; color: #666; margin-bottom: 10px;"></p>
+    <p id="modalRating" style="color: #FFD700; font-size: 20px;"></p>
+    <p class="price-tag" id="modalPrice"></p>
+    <h3>Synopsis:</h3>
+    <p id="modalDesc"></p>
+    <a href="#" id="buyLink" target="_blank" class="buy-btn">BUY NOW</a>
+</div>
+    </div>
+</div>
+
+<script>
+    // Fungsi Slide
+    function moveSlide(direction) {
+        const slider = document.getElementById('bookSlider');
+        slider.scrollBy({ left: direction * 300, behavior: 'smooth' });
+    }
+
+    // Fungsi Modal
+function openBook(title, img, desc, rating, price, link, isbn, author) {
+    document.getElementById('modalTitle').innerText = title;
+    document.getElementById('modalImg').src = img;
+    document.getElementById('modalDesc').innerText = desc;
+    document.getElementById('modalRating').innerText = rating;
+    document.getElementById('modalPrice').innerText = price;
+    document.getElementById('buyLink').href = link;
+    document.getElementById('modalISBN').innerText = "ISBN: " + (isbn || "N/A");
+    document.getElementById('modalAuthor').innerText = "Author: " + (author || "Unknown");
+    document.getElementById('bookModal').style.display = "block";
+}
+
+    function closeModal() {
+        document.getElementById('bookModal').style.display = "none";
+    }
+
+    // Tutup modal kalau klik luar kotak
+    window.onclick = function(event) {
+        let modal = document.getElementById('bookModal');
+        if (event.target == modal) { modal.style.display = "none"; }
+    }
+</script>
+
+<section class="review-section">
+    <form class="review-form">
+        <h2 style="text-align: center; margin-bottom: 20px; color: #FDF9E7;">Review this Story</h2>
+        
+        <div class="input-group">
+            <label>Book Title</label>
+            <input type="text" placeholder="Enter book name..." required>
+        </div>
+
+        <div class="input-group">
+            <label>Rating</label>
+            <div class="star-rating">
+                <input type="radio" id="star5" name="rating" value="5"><label for="star5">★</label>
+                <input type="radio" id="star4" name="rating" value="4"><label for="star4">★</label>
+                <input type="radio" id="star3" name="rating" value="3"><label for="star3">★</label>
+                <input type="radio" id="star2" name="rating" value="2"><label for="star2">★</label>
+                <input type="radio" id="star1" name="rating" value="1"><label for="star1">★</label>
+            </div>
+        </div>
+
+        <div class="input-group">
+            <label>Your Review</label>
+            <textarea rows="5" placeholder="What do you think about this book?" required></textarea>
+        </div>
+
+        <button type="submit" class="submit-btn">SUBMIT REVIEW</button>
+    </form>
+</section>
+
+<footer style="text-align: center; padding: 30px 20px; background-color: #2c2c2c; color: #ffffff;">
+    <style>
+        footer a {
+            color: #ffffff !important;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        footer h3 {
+            color: #ffffff;
+            margin-bottom: 15px;
+        }
+        footer ul {
+            list-style: none;
+            padding: 0;
+        }
+        footer li {
+            margin-bottom: 8px;
+        }
+        .directory-grid {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            max-width: 1000px;
+            margin: 0 auto;
+            text-align: left;
+        }
+        .dir-category {
+            margin: 10px 20px;
+        }
+    </style>
+
+    <div class="directory-grid">
+        <div class="dir-category">
+            <h3>SITEMAP</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+                <li><a href="allcategories.html">All Categories</a></li>
+            </ul>
+        </div>
+
+        <div class="dir-category">
+            <h3>FICTION GENRES</h3>
+            <ul>
+                <li><a href="romance.html">Romance</a></li>
+                <li><a href="fantasy.html">Fantasy</a></li>
+                <li><a href="mystery.html">Mystery</a></li>
+                <li><a href="thriller.html">Thriller</a></li>
+                <li><a href="scifi.html">SciFi</a></li>
+                <li><a href="classic.html">Classic Fiction</a></li>
+            </ul>
+        </div>
+
+        <div class="dir-category">
+            <h3>EXTERNAL RESOURCES</h3>
+            <ul>
+                <li><a href="https://shopee.com.my" target="_blank">Shopee Bookstore</a></li>
+                <li><a href="https://www.popular.com.my" target="_blank">Popular Bookstore</a></li>
+                <li><a href="https://malaysia.kinokuniya.com/" target="_blank">Kinokuniya Bookstore</a></li>
+                <li><a href="https://mphonline.com/" target="_blank">MPH Bookstore</a></li>
+                <li><a href="https://hasanibooks.com/" target="_blank">Hasani Bookstore</a></li>
+            </ul>
+        </div>
+    </div>
+    <br>
+    <p>&copy; 2026 Lumina Book Recommendations. All Rights Reserved.</p>
+</footer>
+
+<script>
+// 1. Fungsi Carian (Tajuk & Penulis)
+const searchInput = document.getElementById('searchInput');
+searchInput.addEventListener('input', function() {
+    const keyword = searchInput.value.toLowerCase();
+    const cards = document.querySelectorAll('.book-card');
+    
+    cards.forEach(card => {
+        // Ambil tajuk buku dari tag <p>
+        const title = card.querySelector('p').innerText.toLowerCase();
+        
+        // Ambil maklumat penulis dari attribute 'onclick'
+        // Kita periksa teks keseluruhan dalam onclick untuk cari nama author
+        const authorData = card.getAttribute('onclick').toLowerCase();
+
+        // Jika keyword ada dalam tajuk ATAU ada dalam maklumat author
+        if (title.includes(keyword) || authorData.includes(keyword)) {
+            card.style.display = "block";
+        } else {
+            card.style.display = "none";
+        }
+    });
+});
+
+    // 2. Fungsi Slide Carousel
+    function moveSlide(direction) {
+        const slider = document.getElementById('bookSlider');
+        slider.scrollBy({ left: direction * 300, behavior: 'smooth' });
+    }
+
+    // 3. Fungsi Modal Pop-out
+    function openBook(title, img, desc, rating, price, link, isbn, author) {
+        document.getElementById('modalTitle').innerText = title;
+        document.getElementById('modalImg').src = img;
+        document.getElementById('modalDesc').innerText = desc;
+        document.getElementById('modalRating').innerText = rating;
+        document.getElementById('modalPrice').innerText = price;
+        document.getElementById('buyLink').href = link;
+        document.getElementById('modalISBN').innerText = "ISBN: " + (isbn || "N/A");
+        document.getElementById('modalAuthor').innerText = "Author: " + (author || "Unknown");
+        document.getElementById('bookModal').style.display = "block";
+    }
+
+    function closeModal() {
+        document.getElementById('bookModal').style.display = "none";
+    }
+
+    // Tutup modal jika klik di luar kotak
+    window.onclick = function(event) {
+        let modal = document.getElementById('bookModal');
+        if (event.target == modal) { modal.style.display = "none"; }
+    }
+</script>
+
+</body>
+</html>

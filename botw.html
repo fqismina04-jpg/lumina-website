@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumina - Romance Collection</title>
+    <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap" rel="stylesheet">
+	<link rel="icon" type="image/jpg" href="luminalogo.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="aboutcontactus.css">
+
+</head>
+<body>
+
+<div class="sticky-header">
+<nav class="navbar">
+    <div class="logo">lumina</div>
+    <ul class="nav-links">
+        <li><a href="index.html">HOME</a></li>
+	<li><a href="botw.html">BOOK OF THE WEEK</a></li>
+        <li class="dropdown">
+            <a href="#">FICTION</a>
+            <ul class="dropdown-content">
+                <li><a href="romance.html">Romance</a></li>
+                <li><a href="fantasy.html">Fantasy</a></li>
+                <li><a href="mystery.html">Mystery</a></li>
+                <li><a href="thriller.html">Thriller</a></li>
+                <li><a href="scifi.html">SciFi</a></li>
+                <li><a href="classic.html">Classic Fiction</a></li>
+            </ul>
+        </li>
+        <li><a href="allcategories.html">ALL CATEGORIES</a></li>
+        <li class="dropdown">
+            <a href="#">ABOUT & CONTACT US</a>
+            <ul class="dropdown-content">
+                <li><a href="aboutus.html">About us</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="contactus.html">Contact us</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+
+    <section class="search-section" style="background-color: #5C1D1D; padding: 25px 20px; text-align: center;">
+        <h3 style="color: #FDF9E7; font-family: 'Homemade Apple', cursive; font-size: 1.8rem; margin-bottom: 15px;">
+            Weekly Curated Masterpieces
+        </h3>
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Search curated title or genre..." onkeyup="filterBooks(this.value)">
+            <span class="search-icon">🔍</span>
+        </div>
+    </section>
+</div>
+
+<section class="book-section">
+    <center><h2 class="section-title">ROMANCE SELECTIONS</h2></center>
+    <div class="carousel-wrapper">
+        
+        <div class="book-container slide-container" id="classicSlider">
+            <div class="book-card">
+                <img src="romancebooks/masihkahadakita.jpg" alt="Masihkah Ada Kita">
+                <div class="genre">ROMANCE</div>
+                <p><strong>Masihkah Ada Kita</strong></p>
+            </div>
+            <div class="book-card">
+                <img src="romancebooks/heliophile.jpg" alt="Heliophile">
+                <div class="genre">ROMANCE</div>
+                <p><strong>Heliophile</strong></p>
+            </div>
+        </div> 
+    </div>
+</section>
+
+<section class="book-section">
+    <center><h2 class="section-title">FANTASY SELECTIONS</h2></center>
+    <div class="carousel-wrapper">
+  
+        <div class="book-container slide-container" id="fantasySlider">
+            <div class="book-card">
+                <img src="homebooks/crimson.jpg" alt="The Crimson Moth">
+                <div class="genre">FANTASY</div>
+                <p><strong>The Crimson Moth</strong></p>
+            </div>
+            <div class="book-card">
+                <img src="homebooks/theatlassix.jpg" alt="The Atlas Six">
+                <div class="genre">FANTASY</div>
+                <p><strong>The Atlas Six</strong></p>
+            </div>
+        </div> 
+    </div>
+</section>
+
+<section class="book-section">
+    <center><h2 class="section-title">MYSTERY SELECTIONS</h2></center>
+    <div class="carousel-wrapper">
+        
+        <div class="book-container slide-container" id="classicSlider">
+            <div class="book-card">
+                <img src="mysterybooks/rahsia.jpg" alt="Rahsia">
+                <div class="genre">MYSTERY</div>
+                <p><strong>Rahsia</strong></p>
+            </div>
+        </div> 
+    </div>
+</section>
+
+<section class="book-section">
+    <center><h2 class="section-title">THRILLER SELECTIONS</h2></center>
+    <div class="carousel-wrapper">
+        
+        <div class="book-container slide-container" id="thrillerSlider">
+            <div class="book-card">
+                <img src="thrillerbooks/garam.jpg" alt="Garam">
+                <div class="genre">THRILLER</div>
+                <p><strong>Garam</strong></p>
+            </div>
+            <div class="book-card">
+                <img src="thrillerbooks/chefscuisine.jpg" alt="Chefs Cuisine">
+                <div class="genre">THRILLER</div>
+                <p><strong>Chefs Cuisine</strong></p>
+            </div>
+            <div class="book-card">
+                <img src="thrillerbooks/helahterakhir.jpg" alt="Helah Terakhir">
+                <div class="genre">THRILLER</div>
+                <p><strong>Helah Terakhir</strong></p>
+            </div>
+        </div> 
+    </div>
+</section>
+
+<section class="book-section">
+    <center><h2 class="section-title">SCI FI SELECTIONS</h2></center>
+    <div class="carousel-wrapper">
+        
+        <div class="book-container slide-container" id="classicSlider">
+            <div class="book-card">
+                <img src="scifibooks/shatterme.jpg" alt="Shatter Me">
+                <div class="genre">SCI FI</div>
+                <p><strong>Shatter Me</strong></p>
+            </div>
+        </div> 
+    </div>
+</section>
+
+<section class="book-section">
+    <center><h2 class="section-title">CLASSIC SELECTIONS</h2></center>
+    <div class="carousel-wrapper">
+        
+        <div class="book-container slide-container" id="classicSlider">
+            <div class="book-card">
+                <img src="classicbooks/persuasion.jpg" alt="Persuasion">
+                <div class="genre">CLASSIC</div>
+                <p><strong>Persuasion</strong></p>
+            </div>
+        </div> 
+    </div>
+</section>
+
+
+<footer style="text-align: center; padding: 20px; background-color: #2c2c2c; color: #ffffff; margin-top: 50px;">
+<style>
+        footer a {
+            color: #ffffff !important;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        footer h3 {
+            color: #ffffff;
+            margin-bottom: 15px;
+        }
+        footer ul {
+            list-style: none;
+            padding: 0;
+        }
+        footer li {
+            margin-bottom: 8px;
+        }
+        .directory-grid {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            max-width: 1000px;
+            margin: 0 auto;
+            text-align: left;
+        }
+        .dir-category {
+            margin: 10px 20px;
+        }
+    </style>
+
+    <div class="directory-grid">
+        <div class="dir-category">
+            <h3>SITEMAP</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+                <li><a href="allcategories.html">All Categories</a></li>
+            </ul>
+        </div>
+
+        <div class="dir-category">
+            <h3>FICTION GENRES</h3>
+            <ul>
+                <li><a href="romance.html">Romance</a></li>
+                <li><a href="fantasy.html">Fantasy</a></li>
+                <li><a href="mystery.html">Mystery</a></li>
+                <li><a href="thriller.html">Thriller</a></li>
+                <li><a href="scifi.html">SciFi</a></li>
+                <li><a href="classic.html">Classic Fiction</a></li>
+            </ul>
+        </div>
+
+        <div class="dir-category">
+            <h3>EXTERNAL RESOURCES</h3>
+            <ul>
+                <li><a href="https://shopee.com.my" target="_blank">Shopee Bookstore</a></li>
+                <li><a href="https://www.popular.com.my" target="_blank">Popular Bookstore</a></li>
+                <li><a href="https://malaysia.kinokuniya.com/" target="_blank">Kinokuniya Bookstore</a></li>
+                <li><a href="https://mphonline.com/" target="_blank">MPH Bookstore</a></li>
+                <li><a href="https://hasanibooks.com/" target="_blank">Hasani Bookstore</a></li>
+            </ul>
+        </div>
+    </div>
+    <br>
+    <p>&copy; 2026 Lumina Book Recommendations. All Rights Reserved.</p>
+</footer>
+
+<script>
+    // Slide Carousel
+    function moveSlide(sliderId, direction) {
+        const slider = document.getElementById(sliderId);
+        slider.scrollBy({ left: direction * 300, behavior: 'smooth' });
+    }
+
+function filterBooks(keyword) {
+    const lowerKey = keyword.toLowerCase();
+    
+    // Ambil semua section yang mengandungi buku
+    const sections = document.querySelectorAll('.book-section');
+
+    sections.forEach(section => {
+        const cards = section.querySelectorAll('.book-card');
+        let hasVisibleBook = false;
+
+        cards.forEach(card => {
+            const title = card.querySelector('p').innerText.toLowerCase();
+            const genre = card.querySelector('.genre').innerText.toLowerCase();
+            
+            if (title.includes(lowerKey) || genre.includes(lowerKey)) {
+                card.style.display = "block";
+                hasVisibleBook = true; // Tandakan ada sekurang-kurangnya 1 buku dalam section ini
+            } else {
+                card.style.display = "none";
+            }
+        });
+
+        // Jika ada buku yang sepadan, tunjuk section. Jika tiada, sorok terus section itu.
+        if (hasVisibleBook) {
+            section.style.display = "block";
+        } else {
+            section.style.display = "none";
+        }
+    });
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumina - Fantasy Collection</title>
+    <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/jpg" href="luminalogo.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="aboutcontactus.css">
+</head>
+<body>
+
+<div class="sticky-header">
+<nav class="navbar">
+    <div class="logo">lumina</div>
+    <ul class="nav-links">
+        <li><a href="index.html">HOME</a></li>
+	<li><a href="botw.html">BOOK OF THE WEEK</a></li>
+        <li class="dropdown">
+            <a href="#">FICTION</a>
+            <ul class="dropdown-content">
+                <li><a href="romance.html">Romance</a></li>
+                <li><a href="fantasy.html">Fantasy</a></li>
+                <li><a href="mystery.html">Mystery</a></li>
+                <li><a href="thriller.html">Thriller</a></li>
+                <li><a href="scifi.html">SciFi</a></li>
+                <li><a href="classic.html">Classic Fiction</a></li>
+            </ul>
+        </li>
+        <li><a href="allcategories.html">ALL CATEGORIES</a></li>
+        <li class="dropdown">
+            <a href="#">ABOUT & CONTACT US</a>
+            <ul class="dropdown-content">
+                <li><a href="aboutus.html">About us</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="contactus.html">Contact us</a></li>
+		<li><a href="faq.html">FAQ</a></li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+
+<section class="search-section">
+    <h3>Ready to escape into a world of magic and wonder?</h3>
+    <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Search title or author...">
+        <span class="search-icon">🔍</span>
+    </div>
+</section>
+</div>
+
+<section class="book-section fantasy-page">
+    <h2 class="section-title">Fantasy Collection</h2>
+    <div class="carousel-wrapper">
+        <button class="slide-btn prev" onclick="moveSlide(-1)">❮</button>
+        
+<div class="book-container slide-container" id="bookSlider">
+
+
+    <div class="book-card" onclick="openBook(
+        'Artemis Fowl Criminally Good', 
+        'fantasybooks/artemis fowl.jpg', 
+        `Twelve-year-old criminal mastermind Artemis Fowl has discovered a world below ground of armed and dangerous--and extremely high-tech--fairies.
+
+He kidnaps one of them, Holly Short, and holds her for ransom in an effort to restore his family's fortune.
+But he may have underestimated the fairies' powers. Is he about to trigger a cross-species war?`, 
+        '★★★★★', 
+        'RM 35.00', 
+        'https://arvee.com.my/prestashop/artemis-fowl/2350-artemis-fowl-9780241335604.html',
+        '9780241335604',
+        'Eoin Colfer'
+    )">
+        <img src="fantasybooks/artemis fowl.jpg" alt="Artemis Fowl Criminally Good">
+        <div class="genre">FANTASY</div>
+        <p><strong>Artemis Fowl Criminally Good</strong></p>
+    </div>
+
+
+
+    <div class="book-card" onclick="openBook(
+        'Babel', 
+        'fantasybooks/babel.jpg', 
+        `1828. Robin Swift, orphaned by cholera in Canton, is brought to London by the mysterious Professor Lovell. There, he trains for years in Latin, Ancient Greek, and Chinese, all in preparation for the day he’ll enroll in Oxford University’s prestigious Royal Institute of Translation—also known as Babel. The tower and its students are the world's center for translation and, more importantly, magic. Silver-working—the art of manifesting the meaning lost in translation using enchanted silver bars—has made the British unparalleled in power, as the arcane craft serves the Empire's quest for colonization.
+
+For Robin, Oxford is a utopia dedicated to the pursuit of knowledge. But knowledge obeys power, and as a Chinese boy raised in Britain, Robin realizes serving Babel means betraying his motherland. As his studies progress, Robin finds himself caught between Babel and the shadowy Hermes Society, an organization dedicated to stopping imperial expansion. When Britain pursues an unjust war with China over silver and opium, Robin must decide . . .
+
+Can powerful institutions be changed from within, or does revolution always require violence?`, 
+        '★★★★★', 
+        'RM 64.95', 
+        'https://my.shp.ee/WdKiPRh',
+        '9780063021426',
+        'R.F. Kuang'
+    )">
+        <img src="fantasybooks/babel.jpg" alt="Babel">
+        <div class="genre">FANTASY</div>
+        <p><strong>Babel</strong></p>
+    </div>
+
+
+
+   <div class="book-card" onclick="openBook(
+        'Once Upon a Broken Heart', 
+        'fantasybooks/ouabh.jpg', 
+        `For as long as she can remember, Evangeline Fox has believed in true love and happy endings... until she learns that the love of her life will marry another.
+
+Desperate to stop the wedding and to heal her wounded heart, Evangeline strikes a deal with the charismatic but wicked Prince of Hearts. In exchange for his help, he asks for three kisses, to be given at the time and place of his choosing.
+
+But after Evangeline’s first promised kiss, she learns that bargaining with an immortal is a dangerous game—and that the Prince of Hearts wants far more from her than she’d pledged. He has plans for Evangeline, plans that will either end in the greatest happily ever after or the most exquisite tragedy...`, 
+        '★★★★★', 
+        'RM 55.90', 
+        'https://shopee.com.my/product/1408291944/26073296072?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkWHlFU0hvQlZFVENpb1FnT09uNDlDSzdNY211Qk9SSkQwMkRWZTdlZ1hRTHBJeUJSYTZJenZUTWpPKzNhMmliaksrQ21jM2ZUZVZiaXNSSDBKYnJ0WTgySWxHd3E4LzlYZnF0UnExcFFKWUltME9tckRRYnNkekZDRkN4b1hRSGRnPT0',
+        '9781250268396',
+        'Stephanie Garber'
+    )">
+        <img src="fantasybooks/ouabh.jpg" alt="Once Upon a Broken Heart">
+        <div class="genre">FANTASY</div>
+        <p><strong>Once Upon a Broken Heart</strong></p>
+    </div>
+
+
+
+   <div class="book-card" onclick="openBook(
+        'The Ballad of Never After', 
+        'fantasybooks/tbona.jpg', 
+        `After Jacks, the Prince of Hearts, betrays her, Evangeline Fox swears she'll never trust him again. Now that she’s discovered her own magic, Evangeline believes she can use it to restore the chance at happily ever after that Jacks stole away.
+
+But when a new terrifying curse is revealed, Evangeline finds herself entering into a tenuous partnership with the Prince of Hearts again. Only this time, the rules have changed. Jacks isn’t the only force Evangeline needs to be wary of. In fact, he might be the only one she can trust, despite her desire to despise him.
+
+Instead of a love spell wreaking havoc on Evangeline’s life, a murderous spell has been cast. To break it, Evangeline and Jacks will have to do battle with old friends, new foes, and a magic that plays with heads and hearts. Evangeline has always trusted her heart, but this time she’s not sure she can...`, 
+        '★★★★★', 
+        'RM 55.90', 
+        'https://shopee.com.my/product/1408291944/26073296072?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkWHlFU0hvQlZFVENpb1FnT09uNDlDSzdNY211Qk9SSkQwMkRWZTdlZ1hRTHBJeUJSYTZJenZUTWpPKzNhMmliaksrQ21jM2ZUZVZiaXNSSDBKYnJ0WTgySWxHd3E4LzlYZnF0UnExcFFKWUltME9tckRRYnNkekZDRkN4b1hRSGRnPT0',
+        '9781250268426',
+        'Stephanie Garber'
+    )">
+        <img src="fantasybooks/tbona.jpg" alt="The Ballad of Never After">
+        <div class="genre">FANTASY</div>
+        <p><strong>The Ballad of Never After</strong></p>
+    </div>
+
+
+
+   <div class="book-card" onclick="openBook(
+        'This Woven Kingdom', 
+        'fantasybooks/woven.jpg', 
+        `Clashing empires, forbidden romance, and a long-forgotten queen destined to save her people—Tahereh Mafi’s first in an epic, romantic trilogy inspired by Persian mythology.
+
+To all the world, Alizeh is a disposable servant, not the long-lost heir to an ancient Jinn kingdom forced to hide in plain sight.
+
+The crown prince, Kamran, has heard the prophecies foretelling the death of his king. But he could never have imagined that the servant girl with the strange eyes, the girl he can’t put out of his mind, would one day soon uproot his kingdom—and the world.
+
+Perfect for fans of Leigh Bardugo, Tomi Adeyemi, and Sabaa Tahir, this is the explosive first book in a new fantasy trilogy from the New York Times bestselling and National Book Award-nominated author Tahereh Mafi.`, 
+        '★★★★★', 
+        'RM 59.95', 
+        'https://mphonline.com/products/this-woven-kingdom-2?variant=43787738022045&country=MY&currency=MYR&utm_medium=product_sync&utm_source=google&utm_content=sag_organic&utm_campaign=sag_organic&srsltid=AfmBOop73QWz7llpPRzPBcnuBZ7_hSYB0nZEaTM7EsegWCyYWwDKpyX_cyc',
+        '9780062972453',
+        'Tahereh Mafi'
+    )">
+        <img src="fantasybooks/woven.jpg" alt="This Woven Kingdom">
+        <div class="genre">FANTASY</div>
+        <p><strong>This Woven Kingdom</strong></p>
+    </div>
+
+
+
+   <div class="book-card" onclick="openBook(
+        'Harry Potter And The Half-Blood Prince', 
+        'fantasybooks/halfbloodprince.jpg', 
+        `There it was, hanging in the sky above the school: the blazing green skull with a serpent tongue, the mark Death Eaters left behind whenever they had entered a building - wherever they had murdered.. 
+
+When DUMBLEDORE arrives at Privet Drive one summer night to collect Harry Potter, his wand hand is BLACKENED and shrivelled, but he does not reveal why. Secrets and SUSPICION are spreading through the wizarding world, and Hogwarts itself is not safe, Harry is convinced that Malfoy bears the DARK MARK: there is a Death Eater amongst them. Harry will need POWERFUL magic and true friends as he explores VOLDEMORT'S darkest secrets, and Dumbledore prepares him to face his DESTINY …`, 
+        '★★★★★', 
+        'RM 39.90', 
+        'https://www.bookxcess.com/products/harry-potter-and-the-half-blood-prince-book-6?srsltid=AfmBOors6deOAUD6zBKc5xxhpVe1jK95B7oy6FzjTKxAZoEbqQ1svzdx',
+        '9781408855706',
+        'J.K.Rowling'
+    )">
+        <img src="fantasybooks/halfbloodprince.jpg" alt="Harry Potter And The Half-Blood Prince">
+        <div class="genre">FANTASY</div>
+        <p><strong>Harry Potter And The Half-Blood Prince</strong></p>
+    </div>
+
+
+
+   <div class="book-card" onclick="openBook(
+        'Harry Potter And The Deathly Hallows', 
+        'fantasybooks/deathlyhallows.jpg', 
+        `Give me Harry Potter, said Voldemort's voice, and none shallbe harmed. Give me Harry Potter, and I shall leave the school untouched. Give me Harry Potter, and you will be rewarded.' 
+
+As he climbs into the sidecar of Hagrid's motorbike and takes to the skies, LEAVING Privet Drive for the last time, Harry Potter knows that LORD VOLDEMORT and the Death Eaters are not far behind. The protective CHARM that has kept Harry safe until now is BROKEN, but he cannot keep hiding. The Dark Lord is breathing FEAR into everything Harry LOVES, and to stop him Harry will have to find and destroy the remaining HORCRUXES. The final BATTLE must begin - Harry must stand and face his enemy ...`, 
+        '★★★★★', 
+        'RM 39.90', 
+        'https://www.bookxcess.com/products/harry-potter-and-the-deathly-hallows-book-7?srsltid=AfmBOoqxSgbuJbjDueVv3Ap6zjD6S5vP1ybPajqp7E6btUGBumlslfng',
+        '9781408855713',
+        'J.K.Rowling'
+    )">
+        <img src="fantasybooks/deathlyhallows.jpg" alt="Harry Potter And The Deathly Hallows">
+        <div class="genre">FANTASY</div>
+        <p><strong>Harry Potter And The Deathly Hallows</strong></p>
+    </div>
+
+
+
+   <div class="book-card" onclick="openBook(
+        'Heir', 
+        'fantasybooks/heir.jpg', 
+        `An orphan. An outcast. A prince. And a biler who will bring an empire to its knees. 
+
+Growing up in the Kegari slums, Aiz has seen her share of suffering. An old tragedy fuels her need for vengeance until one hotheaded mistake lands her in an inescapable prison. 
+
+Banished from her people. SIRSHA is a tracker who uses magic to trace her marks. Destitute, she agrees to hunt down a killer who has murdered children across the Martial Empire. All she has to do is carry out the job and get paid.
+
+QUIL. is the crown prince of the Empire and nephew of a venerated empress, but as the son of a reuted emperor, he understands that power corrupts. When a vicious new enemy threatens the survival of the Empire. Quil must ask himself if he can rise above his tragic lineage and be the heir his people need`, 
+        '★★★★★', 
+        'RM 71.00', 
+        'https://www.worldofbooks.com/en-gb/products/heir-book-sabaa-tahir-9780349125596?sku=GOR013970223',
+        '9798217113545',
+        'Sabaa Tahir'
+    )">
+        <img src="fantasybooks/heir.jpg" alt="Heir">
+        <div class="genre">FANTASY</div>
+        <p><strong>Heir</strong></p>
+    </div>
+
+
+
+   <div class="book-card" onclick="openBook(
+        'Revenge in Violent Hues', 
+        'fantasybooks/revenge.jpg', 
+        `The Headmaster has been killed. 
+Welcome to Citra Buana, an academy built to weaponise the dead. Hidden within the enchanted forests of Gemerlapan, a Reflection inside the Mirror of 1990s Alor Setar, the enemy is quick to claim the throne like moths to a flame. 
+
+Amalia Maganti can communicate with ghosts ever since the mysterious death of her father six years ago. On the night of her 18th birthday, she discovers that her father's paintings are portals to the hidden realm-a direct entry to the different parts of Gemerlapan, right beneath her abusive mother's nose. 
+
+Armed with the dead, a secretive mentor, a weretiger, and the voice of an unknown creature buried deep inside her mind, will Amalia succeed in finding the truth behind her father's death? 
+
+Will she learn to control the shadows and summon her true power against those who have wronged her, once and for all?`, 
+        '★★★★☆', 
+        'RM 35.57', 
+        'https://my.shp.ee/4bXGzBA',
+        '978-967-369-820-2',
+        'Nadiah Zakaria'
+    )">
+        <img src="fantasybooks/revenge.jpg" alt="Revenge in Violent Hues">
+        <div class="genre">FANTASY</div>
+        <p><strong>Revenge in Violent Hues</strong></p>
+    </div>
+
+
+
+   <div class="book-card" onclick="openBook(
+        'Strike the Zither: The Kingdom of Three Duology', 
+        'fantasybooks/strike.jpg', 
+        `A fierce reimagining of the Chinese classic: an ode to loyalty, family, destiny, and the complicated ways each of these elements binds or frees the cunning strategist at the center of the tale. —JUDY I. LIN, 
+
+Joan He takes no prisoners, and Strike the Zither is her latest triumph... Delivers above and beyond. - MARGARET OWEN,
+
+Filled with twists and turns, Strike the Zither is a meticulously plotted, supremely satisfying story ... This is Joan He\'s best yet.-HANNAH WHITTEN, 
+
+Strike the Zither is a page-turner full of unexpected twists, with an expansive, intricate world of sisterhood and subterfuge... A standout work from a remarkable author.- OLIVIE BLAKE, 
+
+Rich with intrigue and epic in scale. Strike the Zither grows tall on the heroic classics it draws from, yet beats powerfully with a heart of its own.-CHLOE GONG, 
+
+Richly layered and highly creative, Strike the Zither offers a world brimming with war, love, and unforgettable characters. A truly magnificent book.—JUNE HUR, Strike the Zither will keep you guessing— and gasping-for more. -JUNE CL TAN, 
+
+Reimagines the Chinese classic Romance of the Three Kingdoms in a way never seen before, with intense twists and turns that pay homage to its inspiration while being refreshingly different.`, 
+        '★★★★☆', 
+        'RM 59.90', 
+        'https://mphonline.com/products/strike-the-zither-kingdom-of-three-1?srsltid=AfmBOopsAsh-I0JCm484pOx08JhPo3XwxQ3pEGIBQXU70f_HPLtppx0Y',
+        '9781250258588',
+        'Joan He'
+    )">
+        <img src="fantasybooks/strike.jpg" alt="Strike the Zither: The Kingdom of Three Duology">
+        <div class="genre">FANTASY</div>
+        <p><strong>Strike the Zither: The Kingdom of Three Duology</strong></p>
+    </div>
+
+        </div>
+        <button class="slide-btn next" onclick="moveSlide(1)">❯</button>
+    </div>
+</section>
+
+<div id="bookModal" class="modal">
+    <div class="modal-content">
+        <span class="close-modal" onclick="closeModal()">&times;</span>
+        <div class="modal-left">
+            <img id="modalImg" src="" alt="">
+        </div>
+        <div class="modal-right">
+            <h2 id="modalTitle"></h2>
+            <p id="modalAuthor" style="font-style: italic; color: #5C1D1D; margin-bottom: 5px;"></p>
+            <p id="modalISBN" style="font-size: 13px; color: #666; margin-bottom: 10px;"></p>
+            <p id="modalRating" style="color: #FFD700; font-size: 20px;"></p>
+            <p class="price-tag" id="modalPrice"></p>
+            <h3>Synopsis:</h3>
+            <p id="modalDesc"></p>
+            <a href="#" id="buyLink" target="_blank" class="buy-btn">BUY NOW</a>
+        </div>
+    </div>
+</div>
+
+<section class="review-section">
+    <form class="review-form">
+        <h2 style="text-align: center; margin-bottom: 20px; color: #FDF9E7;">Review this Story</h2>
+        
+        <div class="input-group">
+            <label>Book Title</label>
+            <input type="text" placeholder="Enter book name..." required>
+        </div>
+
+        <div class="input-group">
+            <label>Rating</label>
+            <div class="star-rating">
+                <input type="radio" id="star5" name="rating" value="5"><label for="star5">★</label>
+                <input type="radio" id="star4" name="rating" value="4"><label for="star4">★</label>
+                <input type="radio" id="star3" name="rating" value="3"><label for="star3">★</label>
+                <input type="radio" id="star2" name="rating" value="2"><label for="star2">★</label>
+                <input type="radio" id="star1" name="rating" value="1"><label for="star1">★</label>
+            </div>
+        </div>
+
+        <div class="input-group">
+            <label>Your Review</label>
+            <textarea rows="5" placeholder="What do you think about this book?" required></textarea>
+        </div>
+
+        <button type="submit" class="submit-btn">SUBMIT REVIEW</button>
+    </form>
+</section>
+
+<footer style="text-align: center; padding: 30px 20px; background-color: #2c2c2c; color: #ffffff;">
+    <style>
+        footer a {
+            color: #ffffff !important;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        footer h3 {
+            color: #ffffff;
+            margin-bottom: 15px;
+        }
+        footer ul {
+            list-style: none;
+            padding: 0;
+        }
+        footer li {
+            margin-bottom: 8px;
+        }
+        .directory-grid {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            max-width: 1000px;
+            margin: 0 auto;
+            text-align: left;
+        }
+        .dir-category {
+            margin: 10px 20px;
+        }
+    </style>
+
+    <div class="directory-grid">
+        <div class="dir-category">
+            <h3>SITEMAP</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+                <li><a href="allcategories.html">All Categories</a></li>
+            </ul>
+        </div>
+
+        <div class="dir-category">
+            <h3>FICTION GENRES</h3>
+            <ul>
+                <li><a href="romance.html">Romance</a></li>
+                <li><a href="fantasy.html">Fantasy</a></li>
+                <li><a href="mystery.html">Mystery</a></li>
+                <li><a href="thriller.html">Thriller</a></li>
+                <li><a href="scifi.html">SciFi</a></li>
+                <li><a href="classic.html">Classic Fiction</a></li>
+            </ul>
+        </div>
+
+        <div class="dir-category">
+            <h3>EXTERNAL RESOURCES</h3>
+            <ul>
+                <li><a href="https://shopee.com.my" target="_blank">Shopee Bookstore</a></li>
+                <li><a href="https://www.popular.com.my" target="_blank">Popular Bookstore</a></li>
+                <li><a href="https://malaysia.kinokuniya.com/" target="_blank">Kinokuniya Bookstore</a></li>
+                <li><a href="https://mphonline.com/" target="_blank">MPH Bookstore</a></li>
+                <li><a href="https://hasanibooks.com/" target="_blank">Hasani Bookstore</a></li>
+            </ul>
+        </div>
+    </div>
+    <br>
+    <p>&copy; 2026 Lumina Book Recommendations. All Rights Reserved.</p>
+</footer>
+
+<script>
+// 1. Fungsi Carian (Tajuk & Penulis)
+const searchInput = document.getElementById('searchInput');
+searchInput.addEventListener('input', function() {
+    const keyword = searchInput.value.toLowerCase();
+    const cards = document.querySelectorAll('.book-card');
+    
+    cards.forEach(card => {
+        // Ambil tajuk buku dari tag <p>
+        const title = card.querySelector('p').innerText.toLowerCase();
+        
+        // Ambil maklumat penulis dari attribute 'onclick'
+        // Kita periksa teks keseluruhan dalam onclick untuk cari nama author
+        const authorData = card.getAttribute('onclick').toLowerCase();
+
+        // Jika keyword ada dalam tajuk ATAU ada dalam maklumat author
+        if (title.includes(keyword) || authorData.includes(keyword)) {
+            card.style.display = "block";
+        } else {
+            card.style.display = "none";
+        }
+    });
+});
+
+    // 2. Fungsi Slide Carousel
+    function moveSlide(direction) {
+        const slider = document.getElementById('bookSlider');
+        slider.scrollBy({ left: direction * 300, behavior: 'smooth' });
+    }
+
+    // 3. Fungsi Modal Pop-out
+    function openBook(title, img, desc, rating, price, link, isbn, author) {
+        document.getElementById('modalTitle').innerText = title;
+        document.getElementById('modalImg').src = img;
+        document.getElementById('modalDesc').innerText = desc;
+        document.getElementById('modalRating').innerText = rating;
+        document.getElementById('modalPrice').innerText = price;
+        document.getElementById('buyLink').href = link;
+        document.getElementById('modalISBN').innerText = "ISBN: " + (isbn || "N/A");
+        document.getElementById('modalAuthor').innerText = "Author: " + (author || "Unknown");
+        document.getElementById('bookModal').style.display = "block";
+    }
+
+    function closeModal() {
+        document.getElementById('bookModal').style.display = "none";
+    }
+
+    // Tutup modal jika klik di luar kotak
+    window.onclick = function(event) {
+        let modal = document.getElementById('bookModal');
+        if (event.target == modal) { modal.style.display = "none"; }
+    }
+</script>
+
+</body>
+</html>
+
+

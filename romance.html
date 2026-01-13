@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumina - Romance Collection</title>
+    <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/jpg" href="luminalogo.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="aboutcontactus.css">
+</head>
+<body>
+
+<div class="sticky-header">
+<nav class="navbar">
+    <div class="logo">lumina</div>
+    <ul class="nav-links">
+        <li><a href="index.html">HOME</a></li>
+	<li><a href="botw.html">BOOK OF THE WEEK</a></li>
+        <li class="dropdown">
+            <a href="#">FICTION</a>
+            <ul class="dropdown-content">
+                <li><a href="romance.html">Romance</a></li>
+                <li><a href="fantasy.html">Fantasy</a></li>
+                <li><a href="mystery.html">Mystery</a></li>
+                <li><a href="thriller.html">Thriller</a></li>
+                <li><a href="scifi.html">SciFi</a></li>
+                <li><a href="classic.html">Classic Fiction</a></li>
+            </ul>
+        </li>
+        <li><a href="allcategories.html">ALL CATEGORIES</a></li>
+        <li class="dropdown">
+            <a href="#">ABOUT & CONTACT US</a>
+            <ul class="dropdown-content">
+                <li><a href="aboutus.html">About us</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="contactus.html">Contact us</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+
+<section class="search-section">
+    <h3>Ready to escape into a world of magic and wonder?</h3>
+    <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Search title or author...">
+        <span class="search-icon">🔍</span>
+    </div>
+</section>
+</div>
+
+<section class="book-section romance-page">
+    <h2 class="section-title">Romance Collection</h2>
+    <div class="carousel-wrapper">
+        <button class="slide-btn prev" onclick="moveSlide(-1)">❮</button>
+        <div class="book-container slide-container" id="bookSlider">
+            
+            <div class="book-card" onclick="openBook(
+            'Love, Yours', 
+            'romancebooks/love,yours.jpg',        
+            `Dia hanya insan sederhana, jauh dari sempurna. Tapi yang jelas di mata ternyata bukan menggambar segala yang indah di dada. Bahagia, itu bukan daripada mata mereka, tapi bahagia itu apa yang kita rasa. Persetankan apa kata dunia, kerana ternyata bagiku yang sederhana itu jauh lebih agung daripada sempurna. \'Kau yang istimewa, Dia yang sempurna.\' -Amalina-`, 
+    '★★★★★', 
+    'RM 38.00', 
+    'https://shopee.com.my/product/416434648/23710425948?d_id=7da0e&uls_trackid=54kq2cua00k4&utm_content=2ig6pVZMhmnuAvEbNNJ8vZpsG8Md',
+    '9789672667711',
+    'Aykelrahim'
+)">
+        <img src="romancebooks/love,yours.jpg" alt="Love, Yours">
+        <div class="genre">ROMANCE</div>
+        <p><strong>Love, Yours</strong></p>
+    </div>
+
+    <div class="book-card" onclick="openBook(
+        'Zeanissa', 
+        'romancebooks/zeanissa.jpg', 
+        `Reality Show? Hati Zeanissa mendongkol geram apabila mendapat tahu cadangan Tengku Fatma menjadikan dia sebagai personal branding Kota Pualam tanpa berbincang dengannya terlebih dahulu. Sudah puas mengelak, tetapi akhirnya dia terpaksa akur atas arahan bapanya, Tan Sri Aziz. Dan hatinya semakin panas apabila bertemu empat mata dengan direktor program, Eldar Haiyan si perengus yang menentang egonya. Tidak pernah lagi ada manusia yang keras melawan kata-katanya selama ini. \'Since you’re not happy, dan tak boleh berurusan dengan saya, apa kata kita batalkan sahaja. Boleh awak terangkan pada Tan Sri Aziz? I would love to see how you do it... \' - Zeanissa \'Tapi setahu saya rancangan ini sudah dipersetujui oleh Tan Sri Aziz. Kalau mahu saya mengalah dan tarik balik persetujuan untuk rancangan ini, sorry… I’m not going to.\' - Eldar Haiyan Zeanissa si diva, dan Eldar yang bengis. Melalui rancangan realiti ini, Eldar tahu bahawa ada sesuatu yang Zeanissa sorokkan. Dan keinginannya yang mahu melindungi Zeanissa semakin memuncak apabila dia mengenali tunangan Zeanissa, Amri Amrullah. Dia pasti, Zeanissa dan dia sependapat; mereka membenci orang yang sama. \'Little Jea... I have one crazy idea… \' - Eldar Haiyan.Apa sebenarnya yang Zeanissa sorokkan selama ini? Dan setujukah Zeanissa dengan idea gila Eldar itu?`, 
+   '★★★★☆', 
+   'RM 40.00', 
+   'https://shopee.com.my/product/1186418423/25487727192?d_id=7da0e&uls_trackid=54kq773701k3&utm_content=2ig6pVZMhoEXKtUHfcWQK1RRZQnK',
+   '9786299888642',
+   'Emmiyya'
+)">
+        <img src="romancebooks/zeanissa.jpg" alt="Zeanissa">
+        <div class="genre">ROMANCE</div>
+        <p><strong>Zeanissa</strong></p>
+    </div>
+
+
+
+   <div class="book-card" onclick="openBook(
+        'Rasa Cerita Kita', 
+        'romancebooks/rasaceritakita.jpg', 
+        `\'Saya sebenarnya nak offer awak untuk bekerja di Laman Cinta.\' – Haris \'Ini bukan work scam, kan?\' – Bunga Laman Cinta, sebuah rumah orang-orang tua elit telah mempertemukan Bunga Elisa, yang meletakkan jiwanya dalam masakan, dengan Haris Hayyan, arkitek yang telah membina dan mengasaskan Laman Cinta.\'Saya cari orang yang boleh memasak dengan ikhlas daripada hati. Seseorang yang seperti awak, Bunga.\' – Haris Bunga bukan hanya pengurus di Laman Cinta, tetapi dia dapat menelusuri cerita para penghuni di situ menerusi rasa. Dalam dapur yang tenang itu, setiap hidangan yang disediakan membuka pintu kepada cerita lalu yang tersimpan kemas. Ruang yang sarat dengan memori itu telah membawa Bunga menyelami kisah cinta, kehilangan dan harapan yang tidak pernah mati. Kadang-kadang, cerita kita tidak disampaikan dengan kata-kata. Ia dirasai… dan dirasai semula, melalui sesuatu yang lebih halus. Kerana setiap kita punya cerita kita yang tersendiri.`, 
+   '★★★★★', 
+   'RM 41.00', 
+   'https://shopee.com.my/product/134773014/43055808339?d_id=7da0e&uls_trackid=54kq9sa801k6&utm_content=2ig6pVZMhn7JqGFrepPNcdt2dtDD',
+   '9789673699742',
+   'Yumi Hyra'
+)">
+        <img src="romancebooks/rasaceritakita.jpg" alt="Rasa Cerita Kita">
+        <div class="genre">ROMANCE</div>
+        <p><strong>Rasa Cerita Kita</strong></p>
+    </div>
+
+
+
+   <div class="book-card" onclick="openBook(
+        'Heliophile', 
+        'romancebooks/heliophile.jpg', 
+        `BEKU, ITU SIFATNYA. Nama dia Aarif Ahsan, tapi mereka panggil dia Sun, matahari. Dan satu-satunya yang boleh berada di sisinya adalah cahaya yang menjadi haba mencairkan hati sedingin ais. THE SUNSHINE. She is the one, the Sun\'s Sunshine. \'I HATE DARKNESS\' \'Then, let me be your light\'.`, 
+    '★★★★☆', 
+    'RM 37.00', 
+    'https://shopee.com.my/product/416434648/15756069947?d_id=7da0e&uls_trackid=54kqb0p900om&utm_content=2ig6pVZMhmmQ74TJux8U5jxGUmN7',
+    '9789672667704', 
+    'Aykelrahim'
+)">
+    <img src="romancebooks/heliophile.jpg" alt="Heliophile">
+    <div class="genre">ROMANCE</div>
+    <p><strong>Heliophile</strong></p>
+</div>
+
+
+
+   <div class="book-card" onclick="openBook(
+        'Sisakan Aku Cinta', 
+        'romancebooks/sisakanakucinta.jpg', 
+        `Naura Amani, seorang gadis yang menghidap penyakit langka yang tiada penawar. Malam-malamnya dihantui mimpi ngeri yang tiada kesudahan. Mimpinya seolah-olah dia pernah menjadi mangsa uji kaji manusia yang cukup kejam menjadi sumpahan lain selain penyakitnya. Pada usia 25 tahun, dia telah menjalani pembedahan yang membawanya kepada koma yang lama. Sedar sahaja dari koma itu, hidupnya mula porak-peranda. Ayahnya yang merupakan ahli politik tiba-tiba dipenjara. Dan lelaki yang pernah menjadi musuh sekolahnya tiba-tiba muncul dan mengaku sebagai suaminya. \'Aku tak anggap perkahwinan ni suatu permainan. Saat aku lafaz akad, aku sudah berjanji di hadapan ayah kau, di hadapan Allah untuk menjaga kau.\' -Rasyad Aryan- Rasyad Aryan, Seorang lelaki yang dianugerahkan Tuhan satu kelebihan. Dia mampu menyembuhkan penyakit setiap manusia yang disentuhnya. Namun siapa sangka, hidup mereka sebenarnya telah terikat lama dengan satu organisasi Rahsia, D\' Fortia yang pernah disertai bapa-bapa mereka suatu ketika dahulu. \'Human experimentation? These. Are madness!\' -Ahmad Rizal- Apakah rahsia di sebalik D Fortia dan apakah kaitannya dengan kehancuran hidup mereka? Adakah mereka akan saling menyembuhkan atau pada akhirnya, mereka akan saling menghancurkan?`, 
+    '★★★☆☆', 
+    'RM 39.00', 
+    'https://shopee.com.my/product/48635050/26293629895?d_id=7da0e&uls_trackid=54kqdhjf00k6&utm_content=2ig6pVZMho1XhYChh7wzphx2draK', 
+    '9786299501121', 
+    'Sofia Roses'
+)">
+    <img src="romancebooks/sisakanakucinta.jpg" alt="Sisakan Aku Cinta">
+    <div class="genre">ROMANCE</div>
+    <p><strong>Sisakan Aku Cinta</strong></p>
+</div>
+
+
+   <div class="book-card" onclick="openBook(
+        'Kenzi x Embun', 
+        'romancebooks/kenzixembun.jpg', 
+        `Suaminya ada skandal dengan kawan baik sendiri! Begitulah klisenya kehidupan Embun Nashmia. Hatinya hancur. Perpisahan dipilih demi ketenangan hatinya. Namun, kemunculan sepotong kek bersama sekeping kad nama telah menghuru-harakan hidupnya. Mr Ross mempunyai misi untuk memastikan anak saudara kesayangannya itu memiliki zuriat yang sah. “Cari isteri. Kahwin. Buat perjanjian. Buat anak. Kemudian lepaskan. Mudah, kan?” Cadang Ross. Kenzi Julian sebal dengan bapa saudaranya yang tiba-tiba saja bertanyakan soal zuriat yang bakal mewarisi hartanya yang berbilion sedangkan hatinya tidak terbuka untuk cinta kerana pernah dikecewakan satu masa dulu. Namun, demi memuaskan hati Mr Ross, dia bersetuju. “But with one condition.” Matanya merenung serius. “Okey?” Ross dekatkan diri dengan Kenzi. “Find someone whom I will never fall in love with, will you?” Dengan wajah serius Kenzi merenung Ross. Syarat Kenzi dituruti. Rancangan diatur. Embun menjadi insan terpilih. Segala-galanya berlaku dengan mudah. Tapi kenapa makin lama mereka bersama, semua yang berlaku mula nampak salah? Kenzi x Embun, masihkah ada bahagia untuk hati mereka yang pernah terluka?`, 
+                '★★★★☆',
+                'RM 30.00',
+                'https://my.shp.ee/8DWeJas',
+                '9789671751589',
+                'Anna Lee'
+            )">
+
+        <img src="romancebooks/kenzixembun.jpg" alt="Kenzi x Embun">
+        <div class="genre">ROMANCE</div>
+        <p><strong>Kenzi x Embun</strong></p>
+    </div>
+
+
+
+   <div class="book-card" onclick="openBook(
+        'Kerana Aku Bukan Pilihan', 
+        'romancebooks/pilihan.jpg', 
+        `Jodoh dan ajal merupakan lukisan takdir buat setiap hambaNya. Di saat Uthman Firdaus kehilangan bidadarinya yang berjuang melahirkan tanda cinta mereka, Nailah Jannah pula diberikan nafas baharu tatkala Allah memberikan peluang kedua kepadanya untuk meneruskan hidup.
+
+Lima tahun berlalu, majlis ulang tahun kelahiran si kembar tanda cinta Uthman dan Hikmah telah menjadi titik pertemuan dua insan sehingga membibitkan perkenalan di antara mereka. Pada awal pertemuan saja Uthman sudah tertarik dengan peribadi Nailah yang begitu akrab dengan anak-anaknya.
+
+“Aku percaya kau boleh jaga anak-anak aku bila aku bekerja nanti.” - Uthman
+
+“Awak kerja apa sebenarnya sampai berbulan tak balik?” - Nailah
+
+“Nelayan.” - Uthman
+
+Setiap kali Uthman menitipkan Qaisah dan Qailah di bawah jagaannya, Nailah sering tertanya tentang Uthman. Bahkan, sikap penyayang si ayah tunggal membuatkan jantung Nailah sering berdegup kencang tanpa alasan yang kukuh. Seakan, ada isyarat istimewa tentang Uthman dalam diri Nailah.
+
+Hingga suatu saat… sang jejaka mulakan langkahnya…
+
+“Sekali aku lafazkan aku terima nikahnya… aku bersumpah yang aku akan selalu melindungi dan membahagiakan kau hingga akhir hayat aku.” - Uthman
+
+Sesungguhnya, Uthman tulus dengan niatnya menikahi Nailah. Dia mengalah dengan kehendak hati demi kebahagiaan zuriatnya meskipun tiada cinta buat si gadis. Tapi, apalah ertinya sebuah perkahwinan jika hanya Nailah yang berjuang demi mahligainya bersama Uthman? Hakikatnya, dia bukanlah pilihan hati suami yang mula bertakhta di ruang hatinya.
+
+“Keterlaluankah kalau saya nak awak cintakan saya? Walau hanya sedikit cuma?” - Nailah
+
+Permintaan Nailah membuatkan Uthman seakan terperangkap dengan niatnya sendiri. Namun, ruang hatinya juga bisa berbolak-balik dengan setiap perjuangan cinta Nailah buatnya. Lantas, bisakah Uthman membuka cinta baharu buat Nailah demi kebahagiaan mereka?`, 
+                '★★★★★',
+                'RM 40.00',
+                'https://mangosteeen.com/product/kerana-aku-bukan-pilihan',
+                '9786299888635',
+                'Syaf Asriqa'
+            )">
+        <img src="romancebooks/pilihan.jpg" alt="Kerana Aku Bukan Pilihan">
+        <div class="genre">ROMANCE</div>
+        <p><strong>Kerana Aku Bukan Pilihan</strong></p>
+    </div>
+
+
+
+   <div class="book-card" onclick="openBook(
+        'Kerana Dendam', 
+        'romancebooks/keranadendam.jpg', 
+        `A“So, get ready to live in ruins once I get back.” – Adam Hirdy. Kerana marah dan dendam, Adam meninggalkan Azalea seusai akad nikah mereka. Tiga tahun dia menghilangkan diri tanpa khabar berita. “Belum sempat awak hancurkan saya, saya dah pun hancur, Adam. Saat awak pergi tinggalkan saya masa hari pertama saya jadi isteri awak, saat itu juga hidup saya terus hitam ... sehitamnya. Saya dah tak nampak lagi ada warna putih dalam hidup saya.” – Azalea. Selama tiga tahun itu jugalah Azalea menunggu kepulangan Adam. Bukan untuk kembali ke pangkuannya, tetapi inginkan kebebasan selepas Adam menghancurkan hidupnya sepertimana yang diucapkan. Dan … Adam kembali semula selepas tiga tahun bersama rancangannya untuk membalas dendam terhadap Azalea. Tetapi belum sempat rancangan dilaksanakan, petunjuk demi petunjuk datang kepadanya dan membawa dia kepada satu per satu rahsia yang secara tidak langsung melibatkan Azalea. Apakah rahsia tersebut? Apakah kaitannya dengan Azalea? Serta, adakah Adam meneruskan rancangannya untuk membalas dendam terhadap Azalea atau dendam itu terkubur begitu sahaja?`, 
+                '★★★★★',
+                'RM 50.00',
+                'https://my.shp.ee/mLdDdsg',
+                '9786297587158',
+                'D. Dahlia'
+            )">
+
+        <img src="romancebooks/keranadendam.jpg" alt="Kerana Dendam">
+        <div class="genre">ROMANCE</div>
+        <p><strong>Kerana Dendam</strong></p>
+    </div>
+
+
+
+   <div class="book-card" onclick="openBook(
+        'Masihkah Ada Kita?', 
+        'romancebooks/masihkahadakita.jpg', 
+        `1.Hadir sesi kaunseling di pejabat agama bersama. 2.Mengerjakan umrah bersama. 3.Tinggal bersama selama 45 hari. Apa logiknya untuk I bersetuju dengan semua syarat-syarat you? —Mahira I just want to redeem everything, Mahira. I know I have failed you before.—Ezariel Pertemuan semula selepas bertahun-tahun Mahira menghilangkan diri, mengundang kemelut yang lebih rumit. Ezariel hanya akan melepaskan Mahira selepas tiga syarat itu dipenuhi? Dalam keterpaksaan, Mahira memenuhinya. Hanya dengan satu matlamat; dia ingin bebas. Bebas daripada kekejaman Ezariel—pewaris empayar Archara—selain melindungi Bliss Media; simbol kehidupan baharu Mahira. Tak mungkin Mahira rela dihancurkan buat sekian kalinya! Dengan peluang kedua ini, Ezariel perlu membuktikan bahawa dia lelaki yang berbeza. Dia mahu menebus dosa silamnya dan menyandang gelaran suami yang layak buat Mahira. Selepas 45 hari, tempoh perjanjian tamat. Maka mereka berdepan dengan keputusan yang sukar. Masihkah ada ‘kita’ dalam hubungan yang rapuh itu?`, 
+               '★★★☆☆',
+                'RM 47.00',
+                'https://my.shp.ee/41hXhm6',
+                '9786299626718',
+                'Emmiyya'
+            )">
+
+        <img src="romancebooks/masihkahadakita.jpg" alt="Masihkah Ada Kita?">
+        <div class="genre">ROMANCE</div>
+        <p><strong>Masihkah Ada Kita?</strong></p>
+    </div>
+
+
+
+   <div class="book-card" onclick="openBook(
+        'Hanya Ingin Kau Tahu', 
+        'romancebooks/hanyainginkautahu.jpg', 
+        `Haris Wafi—lelaki yang tidak pernah tahu erti setia. Baginya, wanita hanya alat hiburan, bukan insan untuk dilindungi. Tapi satu peristiwa memaksa dia ‘membayar’ sesuatu yang tak ternilai … dengan sebuah perkahwinan. Nur Nisrina—mawar putih yang dijaga rapi dengan didikan agama. Dia tidak pernah meminta apa-apa, cuma ingin menjaga maruah dan takdirnya … meskipun terpaksa menjadi isteri kepada lelaki yang tidak pernah menginginkannya. Namun, siapa sangka dalam perkahwinan tanpa cinta ini, tersimpan rahsia yang mampu menghancurkan segalanya? Pampasan apa yang membuatkan lelaki seperti Haris sanggup berkahwin? Dalam pada Haris cuba memperbaiki diri untuk menjadi pelindung yang setia, Nisrina menarik diri daripada menjadi sang mawar putih milik si jejaka. “Tuan tak pernah layak untuk jadi pelindung saya …” - Nur Nisrina “But you are my white rose …” - Haris Wafi`, 
+                '★★★★☆',
+                'RM 46.00',
+                'https://my.shp.ee/iVdauqC',
+                '9786299626701',
+                'Msroses'
+            )">
+        <img src="romancebooks/hanyainginkautahu.jpg" alt="Hanya Ingin Kau Tahu">
+        <div class="genre">ROMANCE</div>
+        <p><strong>Hanya Ingin Kau Tahu</strong></p>
+    </div>
+
+</div>
+        <button class="slide-btn next" onclick="moveSlide(1)">❯</button>
+    </div>
+</section>
+
+<!-- Modal -->
+<div id="bookModal" class="modal">
+    <div class="modal-content">
+        <span class="close-modal" onclick="closeModal()">&times;</span>
+        <div class="modal-left">
+            <img id="modalImg" src="" alt="">
+        </div>
+        <div class="modal-right">
+            <h2 id="modalTitle"></h2>
+            <p id="modalAuthor" style="font-style: italic; color: #5C1D1D; margin-bottom: 5px;"></p>
+            <p id="modalISBN" style="font-size: 13px; color: #666; margin-bottom: 10px;"></p>
+            <p id="modalRating" style="color: #FFD700; font-size: 20px;"></p>
+            <p class="price-tag" id="modalPrice"></p>
+            <h3>Synopsis:</h3>
+            <p id="modalDesc"></p>
+            <a href="#" id="buyLink" target="_blank" class="buy-btn">BUY NOW</a>
+        </div>
+    </div>
+</div>
+
+<section class="review-section">
+    <form class="review-form">
+        <h2 style="text-align: center; margin-bottom: 20px; color: #FDF9E7;">Review this Story</h2>
+        <div class="input-group">
+            <label>Book Title</label>
+            <input type="text" placeholder="Enter book name..." required>
+        </div>
+        <div class="input-group">
+            <label>Rating</label>
+            <div class="star-rating">
+                <input type="radio" id="star5" name="rating" value="5"><label for="star5">★</label>
+                <input type="radio" id="star4" name="rating" value="4"><label for="star4">★</label>
+                <input type="radio" id="star3" name="rating" value="3"><label for="star3">★</label>
+                <input type="radio" id="star2" name="rating" value="2"><label for="star2">★</label>
+                <input type="radio" id="star1" name="rating" value="1"><label for="star1">★</label>
+            </div>
+        </div>
+        <div class="input-group">
+            <label>Your Review</label>
+            <textarea rows="5" placeholder="What do you think about this book?" required></textarea>
+        </div>
+        <button type="submit" class="submit-btn">SUBMIT REVIEW</button>
+    </form>
+</section>
+
+<footer style="text-align: center; padding: 30px 20px; background-color: #2c2c2c; color: #ffffff;">
+    <style>
+        footer a {
+            color: #ffffff !important;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        footer h3 {
+            color: #ffffff;
+            margin-bottom: 15px;
+        }
+        footer ul {
+            list-style: none;
+            padding: 0;
+        }
+        footer li {
+            margin-bottom: 8px;
+        }
+        .directory-grid {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            max-width: 1000px;
+            margin: 0 auto;
+            text-align: left;
+        }
+        .dir-category {
+            margin: 10px 20px;
+        }
+    </style>
+
+    <div class="directory-grid">
+        <div class="dir-category">
+            <h3>SITEMAP</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+                <li><a href="allcategories.html">All Categories</a></li>
+            </ul>
+        </div>
+
+        <div class="dir-category">
+            <h3>FICTION GENRES</h3>
+            <ul>
+                <li><a href="romance.html">Romance</a></li>
+                <li><a href="fantasy.html">Fantasy</a></li>
+                <li><a href="mystery.html">Mystery</a></li>
+                <li><a href="thriller.html">Thriller</a></li>
+                <li><a href="scifi.html">SciFi</a></li>
+                <li><a href="classic.html">Classic Fiction</a></li>
+            </ul>
+        </div>
+
+        <div class="dir-category">
+            <h3>EXTERNAL RESOURCES</h3>
+            <ul>
+                <li><a href="https://shopee.com.my" target="_blank">Shopee Bookstore</a></li>
+                <li><a href="https://www.popular.com.my" target="_blank">Popular Bookstore</a></li>
+                <li><a href="https://malaysia.kinokuniya.com/" target="_blank">Kinokuniya Bookstore</a></li>
+                <li><a href="https://mphonline.com/" target="_blank">MPH Bookstore</a></li>
+                <li><a href="https://hasanibooks.com/" target="_blank">Hasani Bookstore</a></li>
+            </ul>
+        </div>
+    </div>
+    <br>
+    <p>&copy; 2026 Lumina Book Recommendations. All Rights Reserved.</p>
+</footer>
+
+<script>
+// Search Function
+const searchInput = document.getElementById('searchInput');
+searchInput.addEventListener('input', function() {
+    const keyword = searchInput.value.toLowerCase();
+    const cards = document.querySelectorAll('.book-card');
+    cards.forEach(card => {
+        const title = card.querySelector('p').innerText.toLowerCase();
+        const authorData = card.getAttribute('onclick').toLowerCase();
+        card.style.display = (title.includes(keyword) || authorData.includes(keyword)) ? "block" : "none";
+    });
+});
+
+// Slide Carousel
+function moveSlide(direction) {
+    const slider = document.getElementById('bookSlider');
+    slider.scrollBy({ left: direction * 300, behavior: 'smooth' });
+}
+
+// Modal
+function openBook(title, img, desc, rating, price, link, isbn, author) {
+    document.getElementById('modalTitle').innerText = title;
+    document.getElementById('modalImg').src = img;
+    document.getElementById('modalDesc').innerText = desc;
+    document.getElementById('modalRating').innerText = rating;
+    document.getElementById('modalPrice').innerText = price;
+    document.getElementById('buyLink').href = link;
+    document.getElementById('modalISBN').innerText = "ISBN: " + (isbn || "N/A");
+    document.getElementById('modalAuthor').innerText = "Author: " + (author || "Unknown");
+    document.getElementById('bookModal').style.display = "block";
+}
+
+function closeModal() {
+    document.getElementById('bookModal').style.display = "none";
+}
+
+window.onclick = function(event) {
+    if (event.target == document.getElementById('bookModal')) { closeModal(); }
+}
+</script>
+
+</body>
+</html>
+

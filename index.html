@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumina - Book Recommendations</title>
+    <link rel="icon" type="image/jpg" href="luminalogo.png">
+<link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="aboutcontactus.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="logo">lumina</div>
+<div class="nav-search" id="navbarSearch" style="display: none;">
+        <span class="search-icon">🔍</span>
+        <input type="text" id="navInput" placeholder="Search Book of the Week.." onkeyup="filterBooks(this.value)">
+        <span class="close-icon" onclick="clearNavSearch()">✖</span>
+    </div>
+
+    <ul class="nav-links">
+        <li><a href="index.html">HOME</a></li>
+	<li><a href="botw.html">BOOK OF THE WEEK</a></li>
+        <li class="dropdown">
+            <a href="#">FICTION</a>
+            <ul class="dropdown-content">
+                <li><a href="romance.html">Romance</a></li>
+                <li><a href="fantasy.html">Fantasy</a></li>
+                <li><a href="mystery.html">Mystery</a></li>
+                <li><a href="thriller.html">Thriller</a></li>
+		<li><a href="scifi.html">SciFi</a></li>
+		<li><a href="classic.html">Classic Fiction</a></li>
+            </ul>
+        </li>
+        <li><a href="allcategories.html">ALL CATEGORIES</a></li>
+        <li class="dropdown">
+            <a href="#">ABOUT & CONTACT US</a>
+            <ul class="dropdown-content">
+                <li><a href="aboutus.html">About us</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="contactus.html">Contact us</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+
+<!-- HERO BANNER -->
+<section class="static-banner-container">
+    <a href="https://www.google.com/maps/search/?api=1&query=UiTM+Kedah" target="_blank" class="banner-anchor">
+        <div class="banner-frame">
+            <img src="luminabuilding.jpg" alt="Lumina Corporate Building Gateway" class="banner-img">
+            
+            <div class="map-overlay">
+                <div class="overlay-info">
+                    <span class="map-icon">📍</span>
+                    <h3>LUMINA HQ</h3>
+                    <p>Lumina: Where Every Story Begins</p>
+                    <small>(Click to open Maps)</small>
+                </div>
+            </div>
+        </div>
+    </a>
+</section>
+
+<section class="book-section index-page">
+    <h2 class="section-title">BOOK OF THE WEEK</h2>
+    
+    <div class="carousel-wrapper" style="position: relative; max-width: 1200px; margin: 0 auto; display: flex; align-items: center; padding: 0 60px;">
+        
+        <button class="slide-btn prev" onclick="moveWeekSlide(-1)" style="position: absolute; left: 0; z-index: 10;">❮</button>
+        
+        <div class="book-container slide-container" id="weekSlider" style="display: flex; overflow-x: hidden; scroll-behavior: smooth; gap: 20px; width: 100%; justify-content: flex-start; padding: 20px 0;">
+
+            <div class="book-card">
+                <div class="book-img-wrapper">
+                    <img src="homebooks/crimson.jpg" alt="The Crimson Moth">
+                    <div class="overlay"><div class="text"><h3>The Crimson Moth</h3><p>Kristen Ciccarelli</p></div></div>
+                </div>
+                <p class="genre">FANTASY, ROMANCE</p>
+            </div>
+
+            <div class="book-card">
+                <div class="book-img-wrapper">
+                    <img src="homebooks/starwars.jpg" alt="Star Wars">
+                    <div class="overlay"><div class="text"><h3>Star Wars: True Colors</h3><p>Karen Traviss</p></div></div>
+                </div>
+                <p class="genre">SCIFI</p>
+            </div>
+
+            <div class="book-card">
+                <div class="book-img-wrapper">
+                    <img src="homebooks/theatlassix.jpg" alt="The Atlas Six">
+                    <div class="overlay"><div class="text"><h3>The Atlas Six</h3><p>Olivie Blake</p></div></div>
+                </div>
+                <p class="genre">FANTASY</p>
+            </div>
+
+            <div class="book-card">
+                <div class="book-img-wrapper">
+                    <img src="homebooks/persuasion.jpg" alt="Persuasion">
+                    <div class="overlay"><div class="text"><h3>Persuasion</h3><p>Jane Austen</p></div></div>
+                </div>
+                <p class="genre">CLASSIC FICTION</p>
+            </div>
+
+            <div class="book-card">
+                <div class="book-img-wrapper">
+                    <img src="homebooks/garam.jpg" alt="Garam">
+                    <div class="overlay"><div class="text"><h3>Garam</h3><p>Ruwi Meita</p></div></div>
+                </div>
+                <p class="genre">THRILLER</p>
+            </div>
+
+            <div class="book-card">
+                <div class="book-img-wrapper">
+                    <img src="homebooks/rumah.jpg" alt="Rumah Tak Mesti Bahagia">
+                    <div class="overlay"><div class="text"><h3>Rumah Tak Mesti Bahagia</h3><p>Arif Zulkifli</p></div></div>
+                </div>
+                <p class="genre">SLICE OF LIFE</p>
+            </div>
+
+        </div> <button class="slide-btn next" onclick="moveWeekSlide(1)" style="position: absolute; right: 0; z-index: 10;">❯</button>
+        
+    </div>
+</section>
+
+<section class="search-section">
+    <h3>Find Your Favorite Genres!</h3>
+    <div class="search-box">
+        <span class="search-icon">🔍</span>
+        <input type="text" id="searchInput" placeholder="Search..."> 
+        <span class="close-icon" id="clearSearch" style="cursor:pointer">✖</span>
+    </div>
+</section>
+
+<section class="editors-picks">
+    <div class="divider-title">
+        <span class="line"></span>
+        <h2>EDITOR'S PICKS</h2>
+        <span class="line"></span>
+    </div>
+
+<!--ISYA RECS-->
+    <div class="picks-container">
+        <h4 class="rec-title">isya's recomendation</h4>
+        
+        <div class="picks-grid">
+            <div class="pick-card"><img src="isyabooks/dralphamale.jpg" alt="Dr Alpha Male"></div>
+            <div class="pick-card"><img src="isyabooks/chefscuisine.jpg" alt="Chef's Cuisine"></div>
+            <div class="pick-card"><img src="isyabooks/rumah.jpg" alt="Rumah Tak Mesti Bahagia"></div>     
+            <div class="pick-card"><img src="isyabooks/padasubuh.jpg" alt="Pada Subuh Yang Membawaku Pergi"></div>
+    </div>
+<br>
+
+<!--QIS RECS-->
+    <div class="picks-container">
+        <h4 class="rec-title">qis's recomendation</h4>
+        
+        <div class="picks-grid">
+            <div class="pick-card"><img src="qisbooks/artemis fowl.jpg" alt="Artemis Fowl"></div>
+            <div class="pick-card"><img src="qisbooks/crimson.jpg" alt="The Crimson Moth"></div>
+            <div class="pick-card"><img src="qisbooks/deathlyhallows.jpg" alt="Harry Potter & The Deathly Hallows"></div>
+            <div class="pick-card"><img src="qisbooks/halfbloodprince.jpg" alt="Harry Potter & The Half-Blood Prince"></div>
+    </div>
+<br>
+
+<!--AIN RECS-->
+    <div class="picks-container">
+        <h4 class="rec-title">ain's recomendation</h4>
+        
+        <div class="picks-grid">
+            <div class="pick-card"><img src="ainbooks/helahterakhir.jpg" alt="Helah Terakhir"></div>
+            <div class="pick-card"><img src="ainbooks/love,yours.jpg" alt="Love, Yours"></div>
+            <div class="pick-card"><img src="ainbooks/kenzixembun.jpg" alt="Kenzi x Embun"></div>
+            <div class="pick-card"><img src="ainbooks/theatlassix.jpg" alt="The Atlas Six"></div>
+    </div>
+<br>
+
+<!--PUT RECS-->
+    <div class="picks-container">
+        <h4 class="rec-title">put's recomendation</h4>
+        
+        <div class="picks-grid">
+            <div class="pick-card"><img src="putbooks/babel.jpg" alt="Babel"></div>
+            <div class="pick-card"><img src="putbooks/shatterme.jpg" alt="Shatter Me"></div>
+            <div class="pick-card"><img src="putbooks/ouabh.jpg" alt="Once Upon a Broken Heart"></div>     
+            <div class="pick-card"><img src="putbooks/tbona.jpg" alt="The Ballad of Never After"></div>
+    </div>
+<br>
+</section>
+
+<section class="review-section">
+    <div class="divider-title">
+        <span class="line"></span>
+        <h2>LEAVE A REVIEW</h2>
+        <span class="line"></span>
+    </div>
+
+    <form class="review-form">
+        <div class="input-group">
+            <label>Your Name</label>
+            <input type="text" placeholder="Enter your name..." required>
+        </div>
+
+        <div class="input-group">
+            <label>Your Rating</label>
+            <div class="star-rating">
+                <input type="radio" id="star5" name="rating" value="5"><label for="star5">★</label>
+                <input type="radio" id="star4" name="rating" value="4"><label for="star4">★</label>
+                <input type="radio" id="star3" name="rating" value="3"><label for="star3">★</label>
+                <input type="radio" id="star2" name="rating" value="2"><label for="star2">★</label>
+                <input type="radio" id="star1" name="rating" value="1"><label for="star1">★</label>
+            </div>
+        </div>
+
+        <div class="input-group">
+            <label>Your Review</label>
+            <textarea rows="5" placeholder="What do you think about this website?" required></textarea>
+        </div>
+
+        <button type="submit" class="submit-btn">SUBMIT REVIEW</button>
+    </form>
+</section>
+
+<footer style="text-align: center; padding: 30px 20px; background-color: #2c2c2c; color: #ffffff;">
+    <style>
+        footer a {
+            color: #ffffff !important;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        footer h3 {
+            color: #ffffff;
+            margin-bottom: 15px;
+        }
+        footer ul {
+            list-style: none;
+            padding: 0;
+        }
+        footer li {
+            margin-bottom: 8px;
+        }
+        .directory-grid {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            max-width: 1000px;
+            margin: 0 auto;
+            text-align: left;
+        }
+        .dir-category {
+            margin: 10px 20px;
+        }
+    </style>
+
+    <div class="directory-grid">
+        <div class="dir-category">
+            <h3>SITEMAP</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+                <li><a href="allcategories.html">All Categories</a></li>
+            </ul>
+        </div>
+
+        <div class="dir-category">
+            <h3>FICTION GENRES</h3>
+            <ul>
+                <li><a href="romance.html">Romance</a></li>
+                <li><a href="fantasy.html">Fantasy</a></li>
+                <li><a href="mystery.html">Mystery</a></li>
+                <li><a href="thriller.html">Thriller</a></li>
+                <li><a href="scifi.html">SciFi</a></li>
+                <li><a href="classic.html">Classic Fiction</a></li>
+            </ul>
+        </div>
+
+        <div class="dir-category">
+            <h3>EXTERNAL RESOURCES</h3>
+            <ul>
+                <li><a href="https://shopee.com.my" target="_blank">Shopee Bookstore</a></li>
+                <li><a href="https://www.popular.com.my" target="_blank">Popular Bookstore</a></li>
+                <li><a href="https://malaysia.kinokuniya.com/" target="_blank">Kinokuniya Bookstore</a></li>
+                <li><a href="https://mphonline.com/" target="_blank">MPH Bookstore</a></li>
+                <li><a href="https://hasanibooks.com/" target="_blank">Hasani Bookstore</a></li>
+            </ul>
+        </div>
+    </div>
+    <br>
+    <p>&copy; 2026 Lumina Book Recommendations. All Rights Reserved.</p>
+</footer>
+
+
+
+
+<!---JAVASCRIPT--->
+<script>
+    const searchInput = document.getElementById('searchInput');
+    const clearBtn = document.getElementById('clearSearch');
+    
+    const bookCards = document.querySelectorAll('.book-card');
+
+    searchInput.addEventListener('input', function() {
+        const keyword = searchInput.value.toLowerCase();
+
+        bookCards.forEach(card => {
+            const genre = card.querySelector('.genre').textContent.toLowerCase();
+            const title = card.querySelector('img').alt.toLowerCase();
+
+            if (genre.includes(keyword) || title.includes(keyword)) {
+                card.style.display = "block";
+            } else {
+                card.style.display = "none";
+            }
+        });
+    });
+
+    clearBtn.addEventListener('click', () => {
+        searchInput.value = '';
+        bookCards.forEach(card => card.style.display = "block");
+    });
+
+    function moveWeekSlide(direction) {
+        const slider = document.getElementById('weekSlider');
+        // 300 adalah anggaran lebar satu kad buku + gap
+        slider.scrollBy({ left: direction * 300, behavior: 'smooth' });
+    }
+
+window.onscroll = function() {
+    const navSearch = document.getElementById("navbarSearch");
+    
+    // Bila scroll lebih 300px, munculkan search bar
+    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+        navSearch.style.display = "flex"; // Guna flex supaya ikon & input sebaris
+    } else {
+        navSearch.style.display = "none";
+    }
+};
+
+// Fungsi untuk butang X dalam navbar
+function clearNavSearch() {
+    const navInput = document.getElementById('navInput');
+    navInput.value = '';
+    filterBooks(''); // Reset balik list buku
+}
+
+// Fungsi filter yang sedia ada (pastikan pakai class yang sama)
+function filterBooks(keyword) {
+    const lowerKey = keyword.toLowerCase();
+    const allCards = document.querySelectorAll('.book-card');
+    
+    allCards.forEach(card => {
+        const title = card.querySelector('img').alt.toLowerCase();
+        const genre = card.querySelector('.genre').textContent.toLowerCase();
+        
+        if (title.includes(lowerKey) || genre.includes(lowerKey)) {
+            card.style.display = "block";
+        } else {
+            card.style.display = "none";
+        }
+    });
+}
+</script>
+
+</body>
+</html>
