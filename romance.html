@@ -249,7 +249,6 @@ Permintaan Nailah membuatkan Uthman seakan terperangkap dengan niatnya sendiri. 
     </div>
 </section>
 
-<!-- Modal -->
 <div id="bookModal" class="modal">
     <div class="modal-content">
         <span class="close-modal" onclick="closeModal()">&times;</span>
@@ -367,7 +366,7 @@ Permintaan Nailah membuatkan Uthman seakan terperangkap dengan niatnya sendiri. 
 </footer>
 
 <script>
-// Search Function
+
 const searchInput = document.getElementById('searchInput');
 searchInput.addEventListener('input', function() {
     const keyword = searchInput.value.toLowerCase();
@@ -379,13 +378,13 @@ searchInput.addEventListener('input', function() {
     });
 });
 
-// Slide Carousel
+
 function moveSlide(direction) {
     const slider = document.getElementById('bookSlider');
     slider.scrollBy({ left: direction * 300, behavior: 'smooth' });
 }
 
-// Modal
+
 function openBook(title, img, desc, rating, price, link, isbn, author) {
     document.getElementById('modalTitle').innerText = title;
     document.getElementById('modalImg').src = img;
@@ -409,4 +408,5 @@ window.onclick = function(event) {
 
 </body>
 </html>
+
 
