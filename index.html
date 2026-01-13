@@ -46,7 +46,6 @@
     </ul>
 </nav>
 
-<!-- HERO BANNER -->
 <section class="static-banner-container">
     <a href="https://www.google.com/maps/search/?api=1&query=UiTM+Kedah" target="_blank" class="banner-anchor">
         <div class="banner-frame">
@@ -142,7 +141,6 @@
         <span class="line"></span>
     </div>
 
-<!--ISYA RECS-->
     <div class="picks-container">
         <h4 class="rec-title">isya's recomendation</h4>
         
@@ -154,7 +152,6 @@
     </div>
 <br>
 
-<!--QIS RECS-->
     <div class="picks-container">
         <h4 class="rec-title">qis's recomendation</h4>
         
@@ -166,7 +163,6 @@
     </div>
 <br>
 
-<!--AIN RECS-->
     <div class="picks-container">
         <h4 class="rec-title">ain's recomendation</h4>
         
@@ -178,7 +174,6 @@
     </div>
 <br>
 
-<!--PUT RECS-->
     <div class="picks-container">
         <h4 class="rec-title">put's recomendation</h4>
         
@@ -297,9 +292,6 @@
 </footer>
 
 
-
-
-<!---JAVASCRIPT--->
 <script>
     const searchInput = document.getElementById('searchInput');
     const clearBtn = document.getElementById('clearSearch');
@@ -335,22 +327,20 @@
 window.onscroll = function() {
     const navSearch = document.getElementById("navbarSearch");
     
-    // Bila scroll lebih 300px, munculkan search bar
+
     if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
-        navSearch.style.display = "flex"; // Guna flex supaya ikon & input sebaris
+        navSearch.style.display = "flex"; 
     } else {
         navSearch.style.display = "none";
     }
 };
 
-// Fungsi untuk butang X dalam navbar
 function clearNavSearch() {
     const navInput = document.getElementById('navInput');
     navInput.value = '';
-    filterBooks(''); // Reset balik list buku
+    filterBooks(''); 
 }
 
-// Fungsi filter yang sedia ada (pastikan pakai class yang sama)
 function filterBooks(keyword) {
     const lowerKey = keyword.toLowerCase();
     const allCards = document.querySelectorAll('.book-card');
@@ -369,4 +359,5 @@ function filterBooks(keyword) {
 </script>
 
 </body>
+
 </html>
