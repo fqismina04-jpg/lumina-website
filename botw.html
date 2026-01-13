@@ -231,7 +231,6 @@
 </footer>
 
 <script>
-    // Slide Carousel
     function moveSlide(sliderId, direction) {
         const slider = document.getElementById(sliderId);
         slider.scrollBy({ left: direction * 300, behavior: 'smooth' });
@@ -240,7 +239,6 @@
 function filterBooks(keyword) {
     const lowerKey = keyword.toLowerCase();
     
-    // Ambil semua section yang mengandungi buku
     const sections = document.querySelectorAll('.book-section');
 
     sections.forEach(section => {
@@ -253,13 +251,12 @@ function filterBooks(keyword) {
             
             if (title.includes(lowerKey) || genre.includes(lowerKey)) {
                 card.style.display = "block";
-                hasVisibleBook = true; // Tandakan ada sekurang-kurangnya 1 buku dalam section ini
+                hasVisibleBook = true; 
             } else {
                 card.style.display = "none";
             }
         });
 
-        // Jika ada buku yang sepadan, tunjuk section. Jika tiada, sorok terus section itu.
         if (hasVisibleBook) {
             section.style.display = "block";
         } else {
@@ -270,4 +267,5 @@ function filterBooks(keyword) {
 </script>
 
 </body>
+
 </html>
