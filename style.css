@@ -1,4 +1,3 @@
-/* Reset basic */
 * {
     margin: 0;
     padding: 0;
@@ -7,7 +6,7 @@
 }
 
 body {
-    background-color: #FDF9E7; /* Warna latar belakang krim */
+    background-color: #FDF9E7; 
 }
 
 
@@ -16,10 +15,9 @@ body {
     top: 0;
     z-index: 1000;
     width: 100%;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* Tambah shadow sikit biar nampak terapung masa scroll */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
 }
 
-/* Navbar */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -27,31 +25,30 @@ body {
     padding: 20px 50px;
     border-bottom: 2px solid #5C1D1D;
 }
-/* Update Navbar */
+
 .navbar {
     position: sticky;
     top: 0;
     width: 100%;
     z-index: 1000;
-    background-color: #FDF9E7; /* Guna warna background asal website kau */
+    background-color: #FDF9E7; 
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 50px;
     transition: all 0.3s ease;
-    border-bottom: 1px solid rgba(0,0,0,0.1); /* Garisan halus bawah navbar */
+    border-bottom: 1px solid rgba(0,0,0,0.1); 
 }
 
-/* Design Search Bar dalam Navbar (ikut sebiji gambar kau) */
 .nav-search {
-    display: none; /* Sorok dulu */
+    display: none; 
     background: white;
     border-radius: 25px;
     padding: 5px 15px;
     display: flex;
     align-items: center;
     border: 1px solid #ccc;
-    width: 250px; /* Saiz compact untuk navbar */
+    width: 250px; 
 }
 
 .nav-search input {
@@ -95,8 +92,6 @@ body {
     font-size: 14px;
     font-weight: bold;
 }
-
-/* --- LOCATION BANNER STYLE (CLICKABLE IMAGE) --- */
 
 .static-banner-container {
     width: 100%;
@@ -152,7 +147,6 @@ body {
 .overlay-info h3 { font-size: 2rem; margin-bottom: 10px; }
 .overlay-info small { font-style: italic; opacity: 0.8; margin-top: 15px; display: block; }
 
-/* --- HOVER BANNER --- */
 
 .banner-anchor:hover .banner-img {
     filter: blur(10px) brightness(0.6);
@@ -163,7 +157,6 @@ body {
     opacity: 1;
 }
 
-/* Book Section */
 .book-section {
     padding: 40px 50px;
 }
@@ -177,7 +170,7 @@ body {
 .book-container {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap; /* Jangan bagi dia turun bawah */
+    flex-wrap: nowrap; 
     gap: 30px;
     overflow-x: hidden;
     scroll-behavior: smooth;
@@ -186,16 +179,16 @@ body {
 }
 
 .book-card {
-    position: relative; /* JANGAN guna absolute */
-    flex: 0 0 220px; /* Lebar tetap 220px, jangan mengecil */
+    position: relative; 
+    flex: 0 0 220px; 
     width: 220px;
-    display: block; /* Pastikan dia block dalam flex */
+    display: block; 
     text-align: center;
 }
 
 .book-card img {
-    width: 200px; /* Saiz tetap */
-    height: 300px; /* Saiz tetap */
+    width: 200px; 
+    height: 300px; 
     object-fit: cover;
     border-radius: 8px;
     display: block;
@@ -209,26 +202,23 @@ body {
     margin-top: 12px;
 }
 
-/* Pastikan mak bapak (li) ada position relative */
 .dropdown {
     position: relative;
     display: inline-block;
 }
 
-/* Default: Sorok terus anak menu ni */
 .dropdown-content {
-    display: none; /* Ni yang buat dia hilang */
+    display: none; 
     position: absolute;
-    background-color: #FDF9E7; /* Ikut warna tema kau */
+    background-color: #FDF9E7; 
     min-width: 180px;
     box-shadow: 0px 8px 16px rgba(0,0,0,0.1);
-    z-index: 100; /* Bagi dia duduk paling depan */
+    z-index: 100; 
     border: 1px solid #5C1D1D;
-    top: 100%; /* Muncul bawah sikit dari text */
+    top: 100%; 
     left: 0;
 }
 
-/* Link dalam dropdown */
 .dropdown-content a {
     color: #5C1D1D;
     padding: 12px 16px;
@@ -237,23 +227,19 @@ body {
     font-weight: normal;
 }
 
-/* Hover effect untuk link dalam dropdown */
 .dropdown-content a:hover {
     background-color: #5C1D1D;
     color: white;
 }
 
-/* --- NI LOGIK YANG KAU NAK TU --- */
-/* Bila cursor masuk kawasan .dropdown, .dropdown-content akan TAMPIL */
 .dropdown:hover .dropdown-content {
     display: block;
 }
 
-/* Styling Nav Utama */
 .nav-links {
     display: flex;
     list-style: none;
-    align-items: center; /* Bagi semua duduk satu baris tegak */
+    align-items: center;
 }
 
 .nav-links li {
@@ -263,7 +249,7 @@ body {
 
 .nav-links a {
     text-decoration: none;
-    color: #5C1D1D; /* Warna merah gelap ikut design kau */
+    color: #5C1D1D; 
     font-size: 14px;
     font-weight: bold;
     text-transform: uppercase;
@@ -271,7 +257,6 @@ body {
     display: block;
 }
 
-/* Dropdown Box (Content) */
 .dropdown-content {
     display: none;
     position: absolute;
@@ -285,7 +270,7 @@ body {
     padding: 5px 0;
 }
 
-/* Link di dalam Dropdown */
+
 .dropdown-content li {
     margin: 0;
     width: 100%;
@@ -294,49 +279,42 @@ body {
 .dropdown-content a {
     padding: 12px 20px;
     font-weight: normal;
-    text-transform: capitalize; /* Format: Nama Genre */
+    text-transform: capitalize; 
 }
 
-/* HOVER LOGIC */
-/* 1. Bila hover menu utama */
 .nav-links li:hover > a {
-    color: #a04444; /* Warna tukar sikit bila hover */
+    color: #a04444; 
 }
 
-/* 2. Munculkan box dropdown */
 .dropdown:hover .dropdown-content {
     display: block;
 }
 
-/* 3. Hover link dalam dropdown */
 .dropdown-content a:hover {
     background-color: #5C1D1D;
     color: white !important;
 }
 
-/* Buang bulat pada menu utama */
 .nav-links {
     display: flex;
-    list-style: none; /* Buang bullet point */
+    list-style: none; 
     margin: 0;
     padding: 0;
 }
 
-/* Buang bulat pada anak menu (dropdown) */
 .dropdown-content {
     display: none;
     position: absolute;
-    list-style: none; /* Buang bullet point kat sini juga */
+    list-style: none; 
     background-color: #FDF9E7;
     min-width: 200px;
     box-shadow: 0px 8px 16px rgba(0,0,0,0.1);
     z-index: 100;
     border: 1px solid #5C1D1D;
-    padding: 0; /* Pastikan tiada padding kiri yang buat dia nampak senget */
+    padding: 0; 
     margin: 0;
 }
 
-/* Pastikan li di dalam dropdown pun tak ada list style */
 .dropdown-content li {
 list-style: none; 
     padding: 0;
@@ -351,9 +329,8 @@ list-style: none;
     font-weight: normal;
 }
 
-/* Search Section Styling */
 .search-section {
-    background-color: #5C1D1D; /* Merah gelap */
+    background-color: #5C1D1D; 
     padding: 30px 0;
     text-align: center;
     color: white;
@@ -370,7 +347,7 @@ list-style: none;
     width: 300px;
     margin: 0 auto;
     padding: 8px 15px;
-    border-radius: 25px; /* Buat dia jadi bulat hujung */
+    border-radius: 25px; 
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -389,7 +366,6 @@ list-style: none;
     cursor: pointer;
 }
 
-/* Editor's Picks Styling */
 .editors-picks {
     background-color: #5C1D1D;
     padding: 50px 10%;
@@ -397,7 +373,6 @@ list-style: none;
     text-align: center;
 }
 
-/* Garisan kiri kanan tajuk */
 .divider-title {
     display: flex;
     align-items: center;
@@ -413,7 +388,6 @@ list-style: none;
     position: relative;
 }
 
-/* Tambah effect tajam kat hujung line */
 .divider-title .line::after {
     content: '';
     position: absolute;
@@ -424,7 +398,7 @@ list-style: none;
 }
 
 .editors-picks h2 {
-    font-family: 'Cinzel', serif; /* Atau font klasik lain */
+    font-family: 'Cinzel', serif;
     letter-spacing: 3px;
 }
 
@@ -435,7 +409,7 @@ list-style: none;
     font-style: italic;
 }
 
-/* Grid untuk gambar buku bawah */
+
 .picks-grid {
     display: flex;
     gap: 20px;
@@ -446,7 +420,7 @@ list-style: none;
     flex: 1;
     max-width: 180px;
     height: 250px;
-    background-color: #eee; /* Default warna kalau takde gambar */
+    background-color: #eee; 
 }
 
 .pick-card img {
@@ -456,7 +430,6 @@ list-style: none;
     border: 2px solid white;
 }
 
-/* Placeholder awan tu (kalau belum ada gambar) */
 .placeholder {
     background: linear-gradient(to bottom, #87CEEB 60%, #4CAF50 60%);
     position: relative;
@@ -464,7 +437,7 @@ list-style: none;
 }
 
 .review-section {
-    background-color: #5C1D1D; /* Kekalkan tema merah gelap */
+    background-color: #5C1D1D; 
     padding: 50px 10%;
     color: white;
 }
@@ -472,7 +445,7 @@ list-style: none;
 .review-form {
     max-width: 600px;
     margin: 0 auto;
-    background-color: rgba(255, 255, 255, 0.1); /* Box nampak transparent sikit */
+    background-color: rgba(255, 255, 255, 0.1); 
     padding: 30px;
     border-radius: 10px;
 }
@@ -500,15 +473,15 @@ list-style: none;
     font-size: 14px;
 }
 
-/* Sistem Bintang CSS */
+
 .star-rating {
     display: flex;
-    flex-direction: row-reverse; /* Supaya logik hover dari kiri ke kanan */
+    flex-direction: row-reverse; 
     justify-content: flex-end;
     gap: 5px;
 }
 
-.star-rating input { display: none; } /* Sorok radio button asal */
+.star-rating input { display: none; } 
 
 .star-rating label {
     font-size: 30px;
@@ -517,14 +490,14 @@ list-style: none;
     transition: 0.3s;
 }
 
-/* Warna bintang bila di-hover atau di-klik */
+
 .star-rating input:checked ~ label,
 .star-rating label:hover,
 .star-rating label:hover ~ label {
-    color: #FFD700; /* Warna Emas */
+    color: #FFD700; 
 }
 
-/* Button Submit */
+
 .submit-btn {
     background-color: #FDF9E7;
     color: #5C1D1D;
@@ -542,35 +515,32 @@ list-style: none;
     transform: translateY(-2px);
 }
 
-/* Seragamkan saiz gambar buku */
 .book-card img {
-    width: 200px; /* Lebar tetap */
-    height: 300px; /* Tinggi tetap */
-    object-fit: cover; /* Gambar tidak penyek */
+    width: 200px; 
+    height: 300px; 
+    object-fit: cover; 
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
-/* Container untuk slide */
 .carousel-wrapper {
     position: relative;
     display: flex;
     align-items: center;
     width: 100%;
-    overflow: hidden; /* Sembunyikan buku yang terkeluar dari kawasan slide */
+    overflow: hidden; 
 }
 
 .book-container.slide-container {
     display: flex;
-    flex-wrap: nowrap;    /* JANGAN bagi buku turun ke baris bawah */
-    overflow-x: hidden;   /* Sembunyikan scrollbar bawah */
+    flex-wrap: nowrap;   
+    overflow-x: hidden;  
     justify-content: center;
-    gap: 10px;            /* Jarak antara buku */
+    gap: 10px;          
     padding: 20px 0;
     width: 100%;
 }
 
-/* --- FIX BUTTON SLIDE --- */
 .carousel-wrapper {
     display: flex;
     align-items: center;
@@ -584,9 +554,9 @@ list-style: none;
     color: white;
     border: 2px solid #FDF9E7;
     font-size: 20px;
-    width: 45px;      /* Hadkan lebar butang */
-    height: 45px;     /* Hadkan tinggi butang */
-    min-width: 45px;  /* Paksa saiz supaya tak kembang */
+    width: 45px;      
+    height: 45px;     
+    min-width: 45px;  
     cursor: pointer;
     border-radius: 50%;
     display: flex;
@@ -594,7 +564,7 @@ list-style: none;
     justify-content: center;
     z-index: 10;
     transition: 0.3s;
-    flex-shrink: 0;   /* Halang butang daripada mengecil/membesar dalam flex */
+    flex-shrink: 0;   
 }
 
 .slide-btn:hover {
@@ -602,7 +572,6 @@ list-style: none;
     color: #5C1D1D;
 }
 
-/* --- DESIGN MODAL (SINOPSIS) --- */
 .modal {
     display: none; 
     position: fixed;
@@ -655,15 +624,15 @@ list-style: none;
     margin-top: 20px;
 }
 
-/* Pastikan butang slide sentiasa di tengah secara vertical */
+
 .carousel-wrapper {
     display: flex;
-    align-items: center; /* Ini akan selaraskan butang dengan buku */
+    align-items: center; 
     position: relative;
     gap: 15px;
 }
 
-/* Modal Styling */
+
 .modal {
     display: none; 
     position: fixed;
@@ -680,7 +649,7 @@ list-style: none;
     border-radius: 15px;
     width: 70%;
     max-width: 800px;
-    display: flex; /* Supaya gambar di kiri, teks di kanan */
+    display: flex; 
     gap: 30px;
     position: relative;
     color: #5C1D1D;
@@ -695,43 +664,40 @@ list-style: none;
 
 .carousel-wrapper {
     display: flex;
-    align-items: center; /* Bagi butang selari dengan tengah gambar buku */
+    align-items: center; 
     justify-content: center;
     position: relative;
 }
 
 .book-card {
-    flex: 0 0 200px;/* Supaya user tahu buku itu boleh diklik */
+    flex: 0 0 200px;
     cursor: pointer;
     transition: transform 0.3s;
     text-align: center;
 }
 
 .book-card:hover {
-    transform: scale(1.05); /* Effect zoom sikit bila hover */
+    transform: scale(1.05); 
 }
 
-/* --- PEMBETULAN UNTUK SINOPSIS BOLEH SKROL --- */
-
 .modal-content {
-    max-height: 85vh;    /* Kotak modal takkan lebih 85% tinggi skrin */
-    overflow: hidden;    /* Pastikan gambar di kiri tak ikut skrol */
+    max-height: 85vh;    
+    overflow: hidden;    
     display: flex;
 }
 
 .modal-right {
     flex: 1;
-    overflow-y: auto;    /* INI YANG PENTING: Supaya bahagian teks boleh skrol ke bawah */
-    padding-right: 15px; /* Ruang supaya teks tak rapat sangat dengan bar skrol */
+    overflow-y: auto;    
+    padding-right: 15px; 
 }
 
-/* Hiasan bar skrol supaya nampak lebih kemas */
 .modal-right::-webkit-scrollbar {
     width: 6px;
 }
 
 .modal-right::-webkit-scrollbar-thumb {
-    background: #5C1D1D; /* Warna merah gelap ikut tema anda */
+    background: #5C1D1D; 
     border-radius: 10px;
 }
 
@@ -741,7 +707,7 @@ list-style: none;
 
 <style>
     .site-footer {
-        background-color: #1a1a1a; /* Warna gelap supaya kontra dengan teks */
+        background-color: #1a1a1a; 
         color: #fdf9e7;
         padding: 30px 0;
         text-align: center;
@@ -755,23 +721,19 @@ list-style: none;
     }
 
 
-
-/* --- FIX FINAL: BOTW INDEX SAHAJA --- */
-
 #weekSlider .book-card {
-    width: 200px;           /* Kunci lebar supaya tak besar gedabak masa search */
+    width: 200px;           
     flex-shrink: 0;
     text-align: center;
 }
 
-/* Kotak ni yang akan uruskan Zoom & Hitam Penuh */
 #weekSlider .book-img-wrapper {
-    position: relative;     /* Pagar untuk overlay */
+    position: relative;     
     width: 100%;
-    height: 300px;          /* Tinggi tetap gambar */
+    height: 300px;          
     overflow: hidden;
     border-radius: 10px;
-    transition: transform 0.3s ease; /* Animation zoom */
+    transition: transform 0.3s ease; 
     cursor: pointer;
 }
 
@@ -782,49 +744,43 @@ list-style: none;
     display: block;
 }
 
-/* OVERLAY: Inset 0 paksa hitam tutup setiap penjuru wrapper */
 #weekSlider .overlay {
     position: absolute;
-    inset: 0;               /* Tarik rapat ke atas, bawah, kiri, kanan */
+    inset: 0;               
     background: rgba(0, 0, 0, 0.7) !important;
     display: flex;
     align-items: center;
     justify-content: center;
-    opacity: 0;             /* Sorok asal */
+    opacity: 0;             
     transition: opacity 0.3s ease;
     z-index: 5;
 }
 
-/* --- LOGIK HOVER --- */
-/* Bila hover card, wrapper zoom, hitam pun automatik ikut zoom sekali */
 #weekSlider .book-card:hover .book-img-wrapper {
     transform: scale(1.05);
     z-index: 10;
 }
 
-/* Munculkan hitam bila card di-hover */
 #weekSlider .book-card:hover .overlay {
     opacity: 1;
 }
 
-/* Genre kat bawah takkan hilang sebab dia kat luar wrapper */
 #weekSlider .genre {
     margin-top: 10px;
     font-weight: bold;
     display: block;
     color: #5C1D1D;
 }
-/* --- BAHAGIAN FANTASY (Halaman Koleksi) --- */
-/* Kita guna .fantasy-page supaya layout tak lari masa search */
+
 .fantasy-page .book-container {
     display: flex;
-    justify-content: flex-start; /* Buku akan bermula dari kiri */
+    justify-content: flex-start; 
     gap: 20px;
-    overflow-x: hidden; /* Penting untuk carousel berfungsi */
+    overflow-x: hidden; 
 }
 
 .fantasy-page .book-card {
-    flex: 0 0 200px; /* KUNCI UTAMA: Lebar tetap 200px, takkan membesar/mengecil */
+    flex: 0 0 200px; 
     width: 200px;
     position: relative;
     text-align: center;
@@ -832,11 +788,10 @@ list-style: none;
     border-radius: 10px;
 }
 
-/* --- GAYA IMEJ & OVERLAY (Sama untuk semua page) --- */
 .book-card img {
     width: 100%;
-    height: 300px; /* Paksa semua buku tinggi yang sama (Penting!) */
-    object-fit: cover; /* Gambar takkan penyek */
+    height: 300px; 
+    object-fit: cover; 
     border-radius: 8px;
     transition: transform 0.5s ease;
 }
@@ -844,16 +799,15 @@ list-style: none;
 .overlay {
     position: absolute;
     top: 0; left: 0;
-    width: 100%; height: 300px; /* Mesti sama tinggi dengan imej */
+    width: 100%; height: 300px; 
     background-color: rgba(0, 0, 0, 0.7);
-    opacity: 0; /* Sorok secara asal */
+    opacity: 0; 
     display: flex;
     align-items: center;
     justify-content: center;
     transition: 0.5s ease;
 }
 
-/* Munculkan overlay & zoom gambar bila hover */
 .book-card:hover .overlay { opacity: 1; }
 .book-card:hover img { transform: none; }
 
@@ -861,4 +815,5 @@ list-style: none;
 .overlay h3 { font-size: 1.1rem; text-transform: uppercase; margin: 0; }
 .overlay p { font-size: 0.9rem; font-style: italic; margin-top: 5px; }
 </style>
+
 
