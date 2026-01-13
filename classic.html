@@ -248,21 +248,18 @@ Heathcliff, an orphan, is raised by Mr Earnshaw as one of his own children. Hind
 
 
 <script>
-// 1. Fungsi Carian (Tajuk & Penulis)
+
 const searchInput = document.getElementById('searchInput');
 searchInput.addEventListener('input', function() {
     const keyword = searchInput.value.toLowerCase();
     const cards = document.querySelectorAll('.book-card');
     
     cards.forEach(card => {
-        // Ambil tajuk buku dari tag <p>
+        
         const title = card.querySelector('p').innerText.toLowerCase();
         
-        // Ambil maklumat penulis dari attribute 'onclick'
-        // Kita periksa teks keseluruhan dalam onclick untuk cari nama author
         const authorData = card.getAttribute('onclick').toLowerCase();
 
-        // Jika keyword ada dalam tajuk ATAU ada dalam maklumat author
         if (title.includes(keyword) || authorData.includes(keyword)) {
             card.style.display = "block";
         } else {
@@ -271,13 +268,11 @@ searchInput.addEventListener('input', function() {
     });
 });
 
-    // 2. Fungsi Slide Carousel
     function moveSlide(direction) {
         const slider = document.getElementById('bookSlider');
         slider.scrollBy({ left: direction * 300, behavior: 'smooth' });
     }
 
-    // 3. Fungsi Modal Pop-out
     function openBook(title, img, desc, rating, price, link, isbn, author) {
         document.getElementById('modalTitle').innerText = title;
         document.getElementById('modalImg').src = img;
@@ -294,7 +289,6 @@ searchInput.addEventListener('input', function() {
         document.getElementById('bookModal').style.display = "none";
     }
 
-    // Tutup modal jika klik di luar kotak
     window.onclick = function(event) {
         let modal = document.getElementById('bookModal');
         if (event.target == modal) { modal.style.display = "none"; }
@@ -302,4 +296,5 @@ searchInput.addEventListener('input', function() {
 </script>
 
 </body>
+
 </html>
