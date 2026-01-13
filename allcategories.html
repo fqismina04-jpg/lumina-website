@@ -140,7 +140,6 @@
 </footer>
 
 <script>
-    // 1. DATABASE BUKU - Tambah buku baru kat sini je bro!
     const booksData = [
         { title: "The Crimson Moth", author: "Kristen Ciccarelli", category: "fantasy", img: "homebooks/crimson.jpg" },
         { title: "Star Wars: True Colors", author: "Karen Traviss", category: "scifi", img: "homebooks/starwars.jpg" },
@@ -187,9 +186,8 @@
     const categoryFilter = document.getElementById('categoryFilter');
     const searchInput = document.getElementById('allSearchInput');
 
-    // 2. FUNGSI UNTUK GENERATE KAD BUKU
     function displayBooks(booksList) {
-        grid.innerHTML = ""; // Kosongkan grid asal
+        grid.innerHTML = ""; 
         
         if (booksList.length === 0) {
             grid.innerHTML = `<p style="color: #5C1D1D; grid-column: 1/-1; text-align: center; font-size: 1.2rem; margin-top: 50px;">
@@ -216,7 +214,6 @@
         });
     }
 
-    // 3. LOGIK FILTER & SEARCH (DUAL FILTER)
     function filterBooks() {
         const selectedGenre = categoryFilter.value.toLowerCase();
         const searchTerm = searchInput.value.toLowerCase();
@@ -231,13 +228,12 @@
         displayBooks(filtered);
     }
 
-    // Event Listeners
     categoryFilter.addEventListener('change', filterBooks);
     searchInput.addEventListener('input', filterBooks);
 
-    // Render semua buku masa page mula-mula load
     displayBooks(booksData);
 </script>
 
 </body>
+
 </html>
